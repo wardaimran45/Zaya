@@ -98,3 +98,18 @@
 .row{
     width: 100%;
 }
+.widget-primary{
+    padding: 30px;
+    background-color: EE2737;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+.head p{
+    font-size: 15px;
+    margin-bottom: 0;
+    opacity: 0.7;
+    color: white;
+}
+.head h5{
+    font-size: 24px;
+}
