@@ -1,0 +1,104 @@
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+.service-section{
+    margin-top: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #ffeff0;
+    border-radius: 30px;
+    background-image: url(../../assets/images/pic10.png);
+    background-attachment: fixed;
+    background-position-y: 29.904px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+}
+.section-head{
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-title{
+    font-size: 60px;
+    line-height: 1;
+    font-weight: 400;
+    font-style: normal;
+    font-family: Lobster;
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: flipInX;
+}
+.icon-box-wrapper{
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 12px 30px;
+    min-height: 180px;
+}
+.icon-box{
+    margin-bottom: 20px;
+}
+.icon-cell{
+    width: 65px;
+    height: 65px;
+    margin: auto;
+    min-width: 65px;
+    line-height: 65px;
+}
+.menu-icons{
+    width: 60px;
+    height: 60px;
+}
+.icon-content p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes flipInX{
+    0% {
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        -ms-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg);
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: perspective(400px) rotateX(-10deg);
+        -ms-transform: perspective(400px) rotateX(-10deg);
+        transform: perspective(400px) rotateX(-10deg);
+    }
+    70% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+        -ms-transform: perspective(400px) rotateX(10deg);
+        transform: perspective(400px) rotateX(10deg);
+    }
+    100% {
+        -webkit-transform: perspective(400px) rotateX(0deg);
+        -ms-transform: perspective(400px) rotateX(0deg);
+        transform: perspective(400px) rotateX(0deg);
+        opacity: 1;
+    }
+}

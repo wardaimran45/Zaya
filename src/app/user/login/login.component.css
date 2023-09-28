@@ -1,0 +1,34 @@
+.inner-div{
+    /* display: grid;
+    place-items: center;    */
+    margin-top: 100px;
+    border-radius: 5px;
+    padding: 40px 15px 20px 15px;
+  }
+  .form-wrapper{
+      width: 100%;
+  }
+  .inner-div h1{
+      font-weight: 700;
+      font-size: 32px;
+      padding-bottom: 10px;
+  }
+  .signup-btn{
+      background-color: #ee2737;
+      padding: 10px 120px;
+      border: none;
+      border-radius: 8px;
+      width: 100%;
+      
+  }
+  .login-tag{
+      font-weight: 500;
+      color: #ee2737 !important;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .text-color-form{
+      color: #666666;
+  }
+  

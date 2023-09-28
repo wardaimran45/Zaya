@@ -1,0 +1,100 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.contact-section{
+   width: 100%;
+ 
+   margin-top: 25px;
+   
+}
+.contact-area{
+   background: url('../../assets/images/pic13.png');
+   background-attachment: fixed;
+   background-position-y:63.744px ;
+   padding: 50px 50px 20px;
+   border-radius: 10px;
+   background-color: #222222;
+   width: 84%;
+   margin-left: 130px;
+}
+.m-b30 , .contact-head{
+    margin-bottom: 30px;
+}
+.contact-head h4{
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+    margin: 0px 0px 8px;
+}
+.contact-head p{
+    color: #bbbbbb;
+    font-size: 16px;
+    font-weight: 400;
+}
+.input-group{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+.input-line{
+    border-top: 1px solid #fff !important;
+    align-items: center;
+}
+.input-group-prepand{
+    width: 35px;
+    height: 50px;
+    line-height: 40px;
+    position: absolute;
+    left: 0;
+}
+.user-icon{
+    font-size: 24px;
+    color: white;
+}
+.input-fields{
+    padding-left: 40px !important;
+    padding: 0;
+    height: 48px !important;
+    line-height: 24px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 400;
+    background-color: transparent;
+}
+.input-fields-2{
+    padding-left: 40px !important;
+    padding: 0;
+    height: 48px !important;
+    line-height: 24px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 400;
+    background-color: transparent;
+}
+.input-fields:focus-visible{
+     border: none !important;
+     outline: unset !important;
+}
+::placeholder{
+    color: white !important;
+}
+.book-btn{
+    background-color:#EE2737 ;
+    color: white;
+    font-weight: 500;
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 6px;
+}
+.row{
+    width: 100%;
+}

@@ -1,0 +1,151 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.menu-section{
+    /* padding-top: 100px; */
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.menu-head{
+    margin-bottom: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  font-family: Lobster;
+  visibility: visible;
+}
+.menu-icons{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.menu-icons:hover::after{
+    animation-duration: 1.8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: swigo-logo;
+    background-repeat: no-repeat;
+}
+.site-filters{
+    margin-left: 150px;
+    margin-bottom: 40px;
+    /* padding: 8px 15px; */
+    border: none;
+    margin-right: 10px;
+}
+
+.filters{
+    margin-right: -10px;
+    list-style: none;
+    display: flex;
+
+}
+.list-btn{
+    background-color: white;
+    color: #ee2737;
+    padding: 5px 20px;
+    border: none;
+    margin-right: 10px;
+}
+.list-btn:hover, .list-btn:active{
+    background-color: #ffeff0;
+    padding: 5px 20px;
+    border: none;
+    margin-right: 10px;
+}
+.list-btn a{
+    color: black;
+    font-size: 15px;
+    display: inline-flex;
+    font-weight: 500;
+}
+.list-btn a:hover{
+    color: #ee2737;
+    font-size: 15px;
+    display: inline-flex;
+    font-weight: 500;
+}
+.view-btn{
+    color: #ee2737;
+    border-color:  #ee2737;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+.view-btn:hover{
+    color: white;
+    background-color:  #ee2737;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+@keyframes swigo-logo{
+    0%, 45%, 55%, 65%, 75%, 80%, 85%, 100% {
+        animation-timing-function: cubic-bezier(0.2, 0.6, 0.35, 1);
+    }
+    0% {
+        transform: rotate(0);
+    }
+    45% {
+        transform: translate3d(-4%, -13%, 0) rotate(-13deg);
+    }
+    55% {
+        transform: translate3d(1%, -2%, 0) rotate(6deg);
+    }
+    65% {
+        transform: translate3d(-2%, -4%, 0) rotate(-3deg);
+    }
+    75% {
+        transform: translate3d(2%, 3%, 0) rotate(3deg);
+    }
+    80% {
+        transform: translate3d(-2%, 1%, 0) rotate(-2deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.mini-icons{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.drink{
+    background-image: url('../../assets/icons/cocktail.png');
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+.menuCard-1{
+      margin-left: 150px;
+      margin-right: 90px;
+      margin-bottom: 30px;
+}
+.menuCard-2{
+    margin-left: 150px;
+    margin-right: 90px;
+
+}
+.p-unset{
+    padding: unset !important;
+    width: 150px;
+}
+.row{
+    width: 100%;
+}

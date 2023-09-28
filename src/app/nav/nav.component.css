@@ -1,0 +1,98 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+.logo{
+    height: 32px;
+    width: 200px;
+    margin-left: 150px;
+    padding-right: 40px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+nav{
+    /* margin-top: 15px; */
+    padding: 20px 0 10px 0;
+    background: transparent;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-link.active{
+    color: #EE2737 !important;
+    font-weight: 600;
+    
+}
+.nav-link{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.anim-logo:after{
+    content: "";
+    animation-duration: 1.8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: swigo-logo;
+    background-image: url(../../assets/images/pan1.png);
+    height: 12px;
+    width: 40px;
+    position: absolute;
+    top: 12px;
+    left: 165px;
+    background-repeat: no-repeat;
+}
+@keyframes swigo-logo {
+    0%, 45%, 55%, 65%, 75%, 80%, 85%, 100% {
+      opacity: 1; /* Final opacity */
+      animation-timing-function: cubic-bezier(0.2, 0.6, 0.35, 1);
+    }
+    0% {
+      transform: rotate(0);
+  }
+  45% {
+    transform: translate3d(-4%, -13%, 0) rotate(-13deg);
+  }
+  55% {
+    transform: translate3d(1%, -2%, 0) rotate(6deg);
+  }
+  65% {
+    transform: translate3d(-2%, -4%, 0) rotate(-3deg);
+  }
+  75% {
+    transform: translate3d(2%, 3%, 0) rotate(3deg);
+  }
+  80% {
+    transform: translate3d(-2%, 1%, 0) rotate(-2deg);
+  }
+  100% {
+    transform: none;
+  }
+
+  }
+
+.nav-icons{
+ float: left;
+ padding-right: 200px;
+  }
+
+.icon-1{
+        font-size: 22px;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 5px;
+        margin-right: 10px;
+  }
+  .icon-2{
+    font-size: 22px;
+    background-color:white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.navbar.fixed {
+  background-color: #ffffff; /* White background color */
+ 
+}
+.navbar{
+  background-color: transparent;
+}
