@@ -3,6 +3,9 @@ import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faUserGroup } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
+import { faCalendarDays } from '@fortawesome/free-regular-svg-icons';
+
 
 
 
@@ -17,4 +20,7 @@ export class ContactComponent {
   phoneIcon = faPhone
   userGroup = faUserGroup
   mailIcon = faEnvelope
+  clock = faClock
+  calendarIcon = faCalendarDays
+
 }

@@ -64,19 +64,19 @@
                         <div class="col-lg-6 col-md-6 m-b30">
                             <div class="input-group">
                                 <div class="input-group-prepand">
-                                 <fa-icon [icon]="userIcon2" class="user-icon"></fa-icon>
+                                <fa-icon [icon]="clock" class="user-icon"></fa-icon> 
                                 </div>
                              </div>
-                             <input type="time" required class="input-fields" placeholder="Time"/>
+                             <input type="text" required class="input-fields" placeholder="Time"/>
                              <div class="input-line"></div>
                         </div>
                         <div class="col-lg-6 col-md-6 m-b30">
                             <div class="input-group">
                                 <div class="input-group-prepand">
-                                 <fa-icon [icon]="userIcon2" class="user-icon"></fa-icon>
+                                 <fa-icon [icon]="calendarIcon" class="user-icon"></fa-icon>
                                 </div>
                              </div>
-                             <input type="date" required class="input-fields" placeholder="Date"/>
+                             <input type="text" required class="input-fields" placeholder="Date"/>
                              <div class="input-line"></div>
                         </div>
                     </div>
@@ -89,14 +89,14 @@
             <div class="col-lg-4 col-md-12 m-b30">
                 <div class="widget widget-primary">
                     <div class="head">
-                        <h5>Contact Info</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing typesetting industry.</p>
+                        <h5 class="head-contact">Contact Info</h5>
+                        <p>Lorem Ipsum is simply dummy text of <br/> the printing typesetting industry.</p>
                     </div>
-                    <ul>
-                        <li><fa-icon></fa-icon><p>1247/Plot No. 39, 15th Phase, Colony, Kkatpally, Hyderabad</p></li>
-                        <li><fa-icon></fa-icon><p>+91 987-654-3210 <br/>
+                    <ul class="list-area">
+                        <li><img class="contact-icons" src="../../assets/icons/location.png"/><p class="text-area">1247/Plot No. 39, 15th Phase, Colony, Kkatpally, Hyderabad</p></li>
+                        <li><img class="contact-icons" src="../../assets/icons/telephone.png"/><p>+91 987-654-3210 <br/>
                             +91 123-456-7890</p></li>
-                        <li><fa-icon></fa-icon><p>info@example.com <br/>
+                        <li><img class="contact-icons" src="../../assets/icons/email.png"/><p>info@example.com <br/>
                             info@example.com</p></li>
                     </ul>
                 </div>
@@ -104,3 +104,4 @@
         </div> 
     </div>
 </section>
+<section class="contact-section-after"></section>
