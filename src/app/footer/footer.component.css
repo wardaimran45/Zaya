@@ -126,4 +126,6 @@
 .footer-menu{
     list-style: none;
     display: flex;
+    color: #777777;
+    font-size: 14px;
 }

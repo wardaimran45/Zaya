@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { SharedModule } from '../shared/shared.module';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 
 
@@ -13,11 +14,14 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports:[
       RegisterComponent,
-      LoginComponent
+      LoginComponent,
+      ReactiveFormsModule
   ]
 })
 export class UserModule { }

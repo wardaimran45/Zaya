@@ -4,21 +4,22 @@
     <h1 class="font-bold text-center">Welcome</h1>
     <p class=" text-center text-color-form">Register as a New User</p>
     <div class="w-full">
-        <form class="bg-white rounded px-8 pt-6 pb-8 mb-4 w-full">
+        <app-alert *ngIf="showAlert" [color]="alertColor">{{alertMsg}}</app-alert>
+        <form class="bg-white rounded px-8 pt-6 pb-8 mb-4 w-full" [formGroup] = 'registerForm' (ngSubmit)="register()">
             <div class="mb-4">
                 <label class="font-bold mb-2" style="font-weight: 600">Name*</label>
                 <br/>
-               <app-input type="text" placeholder="Enter Your Name"></app-input>
+               <app-input [control]="registerForm.controls.name" type="text" placeholder="Enter Your Name"></app-input>
         </div>
            
             <div class="mb-4">
                 <label class="font-semibold mb-2" style="font-weight: 600">Email*</label>
-                <app-input type="email" placeholder="Enter Your Email"></app-input>
+                <app-input [control]="registerForm.controls.email" type="email" placeholder="Enter Your Email"></app-input>
             </div>
             
             <div class="mb-4">
                 <label class="font-semibold mb-2" style="font-weight: 600">Password*</label>
-            <app-input placeholder="Create a password" type="password"></app-input>
+            <app-input [control]="registerForm.controls.password" placeholder="Create a password" type="password"></app-input>
             </div>
           
             <button class="signup-btn text-white font-semibold w-full">Sign Up</button>

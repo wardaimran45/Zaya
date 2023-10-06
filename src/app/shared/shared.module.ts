@@ -4,6 +4,8 @@ import { InputComponent } from './input/input.component';
 import { CardComponent } from './card/card.component';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AlertComponent } from './alert/alert.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -11,16 +13,22 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   declarations: [
     InputComponent,
     CardComponent,
-    MenuCardComponent
+    MenuCardComponent,
+    AlertComponent,
+   
+    
   ],
   imports: [
     CommonModule,
     FontAwesomeModule,
+    ReactiveFormsModule
   ],
   exports:[
     InputComponent,
     CardComponent,
-    MenuCardComponent
+    MenuCardComponent,
+    AlertComponent,
+ 
   ]
 })
 export class SharedModule { }

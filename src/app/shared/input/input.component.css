@@ -10,3 +10,9 @@ input:focus{
 *{
     font-family: 'Poppins', sans-serif;
   }
+
+.text-red-400{
+    color: red;
+    font-size: 14px;
+   
+}

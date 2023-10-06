@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+<section class="menuPage-section">
+   <div class="overlay">
+    <div class="inner-banner">
+        <div class="container">
+            <div class="banner-head text-center">
+                <h1>Our Menu</h1>
+                <nav style="--bs-breadcrumb-divider: '>'; color: white;" aria-label="breadcrumb" class="bread">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item" aria-current="page">Menu</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-xl-10 col-lg-9 col-md-12">
+        <div class="site-filters">
+            <ul class="filters" data-bs-toggle="buttons">
+                <li class="list-btn btn" (click)="filterProducts('All')"><a>
+                    <img src="../../assets/icons/fast-food.png" class="mini-icons"/>ALL
+                </a></li>
+               <li class="btn list-btn" (click)="filterProducts('ColdDrink')"><a><img src="../../assets/icons/cocktail.png" class="mini-icons"/>COLD DRINK
+                </a></li> 
+                <li class="btn list-btn"><a (click)="filterProducts('Pizza')"><img src="../../assets//icons/pizza-slice.png" class="mini-icons"/>PIZZA
+                </a></li>
+                <li class="btn list-btn" (click)="filterProducts('Salad')"><a><img src="../../assets/icons/salad.png" class="mini-icons"/>SALAD
+                </a></li>
+                <li class="btn list-btn" (click)="filterProducts('Sweets')"><a><img src="../../assets/icons/cupcake.png" class="mini-icons"/>SWEETS
+                </a></li>
+                <li class="btn list-btn" (click)="filterProducts('Spicy')"><a><img src="../../assets/icons/chilli-pepper.png" class="mini-icons"/>SPICY
+                </a></li>
+                <li class="btn list-btn" (click)="filterProducts('Burger')"><a><img src="../../assets/icons/hamburger.png" class="mini-icons"/>BURGER
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xl-2 col-lg-3 col-md-12">
+        <a class="btn-hover-3 btn view-btn" >
+            <span class="btn-text">Filter</span>
+            <fa-icon [icon]="filterIcon" class="filter-icon"></fa-icon>
+        </a>
+    </div>
+</div>
+<div class="menuCard-1">
+    <div class="row">
+      <div class="col-xl-4 col-lg-4 col-md-4 mb-4" *ngFor="let product of products$ | async">
+        <app-menu-card [img]="product.image" [price]="product.price" [content]="product.description" [title]="product.title" [star]="product.rating"></app-menu-card>
+      </div>
+    </div>
+  </div>
+  <app-menu-footer></app-menu-footer>
+</section>

@@ -14,6 +14,15 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { NewsletterComponent } from './newsletter/newsletter.component'
 import { SharedModule } from "./shared/shared.module";
+import {AngularFireModule} from '@angular/fire/compat';
+import {environment} from 'src/environments/environment';
+import {AngularFireAuthModule} from '@angular/fire/compat/auth';
+import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
+import { MenuPageComponent } from './menu-page/menu-page.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MenuFooterComponent } from './menu-footer/menu-footer.component';
+
+
 
 
 @NgModule({
@@ -26,7 +35,10 @@ import { SharedModule } from "./shared/shared.module";
         MenuComponent,
         ContactComponent,
         FooterComponent,
-        NewsletterComponent
+        NewsletterComponent,
+        MenuPageComponent,
+        NavbarComponent,
+        MenuFooterComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -35,7 +47,15 @@ import { SharedModule } from "./shared/shared.module";
         AppRoutingModule,
         UserModule,
         FontAwesomeModule,
-        SharedModule
+        SharedModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFireAuthModule,
+        AngularFirestoreModule
+
+    ],
+    exports: [
+        NavComponent
     ]
+        
 })
 export class AppModule { }
