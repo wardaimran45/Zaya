@@ -46,7 +46,7 @@
 </div>
 <div class="menuCard-1">
     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 mb-4" *ngFor="let product of products$ | async">
+      <div class="col-xl-4 col-lg-4 col-md-4 mb-4" *ngFor="let product of products$ | async" (click)=" onCardClick(product)">
         <app-menu-card [img]="product.image" [price]="product.price" [content]="product.description" [title]="product.title" [star]="product.rating"></app-menu-card>
       </div>
     </div>

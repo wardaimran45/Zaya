@@ -21,6 +21,7 @@ import {AngularFirestoreModule} from '@angular/fire/compat/firestore';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuFooterComponent } from './menu-footer/menu-footer.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 
@@ -38,7 +39,8 @@ import { MenuFooterComponent } from './menu-footer/menu-footer.component';
         NewsletterComponent,
         MenuPageComponent,
         NavbarComponent,
-        MenuFooterComponent
+        MenuFooterComponent,
+        ProductDetailComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

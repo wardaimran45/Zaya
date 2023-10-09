@@ -1,0 +1,11 @@
+<div class="product-detail">
+    <h2>Product Details</h2>
+    <ng-container *ngIf="selectedProduct">
+      <p>Product ID: {{ selectedProduct.id }}</p>
+      <p>Title: {{ selectedProduct.title }}</p>
+      <p>Description: {{ selectedProduct.description }}</p>
+      <p>Price: {{ selectedProduct.price }}</p>
+      <p>Category: {{ selectedProduct.category }}</p>
+    </ng-container>
+  </div>
+  

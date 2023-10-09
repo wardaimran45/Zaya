@@ -8,16 +8,16 @@
                             <h5 class="footer-title">Contact</h5>
                             <ul>
                                 <li>
-                                    <fa-icon></fa-icon>
-                                    <p>1247/Plot No. 39, 15th Phase, Colony, Kkatpally, Hyderabad</p>
+                                    <fa-icon [icon]="locationIcon" class="f-icon"></fa-icon>
+                                    <p>1247/Plot No. 39, 15th Phase, <br/> Colony, Kkatpally, Hyderabad</p>
                                 </li>
-                                <li><fa-icon></fa-icon>
+                                <li><fa-icon [icon]="phoneIcon" class="f-tel"></fa-icon>
                                     <p>
                                         +91 987-654-3210
                                         <br/>
 										+91 123-456-7890
                                     </p></li>
-                                <li><fa-icon></fa-icon>
+                                <li><fa-icon [icon]="mailIcon" class="f-mail"></fa-icon>
                                     <p>info@example.com
                                         <br/>
                                         info@example.com</p>
@@ -75,7 +75,7 @@
                         <p>Copyright 2023 All rights reserved.</p>
                     </div>
                     <div class="col-xl-6 col-md-6 text-md-end">
-                        <span>
+                        <span class="copyright-text">
                             Powered by 
                             <a>DexignZone</a>
                         </span>
