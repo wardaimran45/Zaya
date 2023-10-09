@@ -13,9 +13,7 @@ export class AllProductsService {
 
   constructor(private db : AngularFirestore ) { }
 
-  getProducts(): Observable<any[]> {
-    console.log("bye",this.db.collection('products').valueChanges());
-    
+  getProducts(): Observable<any[]> {  
     return this.db.collection('products').valueChanges();
   }
 

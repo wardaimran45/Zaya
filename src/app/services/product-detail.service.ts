@@ -42,7 +42,6 @@ export class ProductDetailService {
 
   setSelectedProductId(productId: any) {
     this.selectedProductIdSource.next(productId);
-        console.log("aoa",productId)
       }
 }
 

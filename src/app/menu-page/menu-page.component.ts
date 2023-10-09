@@ -37,16 +37,12 @@ export class MenuPageComponent implements OnInit{
   }
 
   onCardClick(productId: { id: string,}) {
-   
-    console.log("hdjdn", productId);
     const id = productId.id;
     const selectedProduct = { ...productId };
     
     // Set the selected product ID in the service
     this.productDetailService.setSelectedProductId(selectedProduct);
     this.router.navigate(['product-detail', id]);
-  
-    console.log("product Id", productId);
   }
 
  
