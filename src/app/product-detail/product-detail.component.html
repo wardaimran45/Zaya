@@ -1,11 +1,267 @@
-<div class="product-detail">
-    <h2>Product Details</h2>
+<app-navbar></app-navbar>
+<section class="productDetail-section">
+  <div class="overlay-detail">
+    <div class="inner-banner">
+        <div class="container">
+            <div class="banner-head text-center">
+                <h1>Product Detail</h1>
+                <nav style="--bs-breadcrumb-divider: '>'; color: white;" aria-label="breadcrumb" class="bread">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item" aria-current="page">Product Detail</li>
+                    </ol>
+                  </nav>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="container">
     <ng-container *ngIf="selectedProduct">
-      <p>Product ID: {{ selectedProduct.id }}</p>
-      <p>Title: {{ selectedProduct.title }}</p>
-      <p>Description: {{ selectedProduct.description }}</p>
-      <p>Price: {{ selectedProduct.price }}</p>
-      <p>Category: {{ selectedProduct.category }}</p>
-    </ng-container>
-  </div>
+    <div class="row product-detail">
+      <div class="col-lg-4 col-md-5">
+          <div class="detail-media">
+            <img [src]="selectedProduct.image"/>
+          </div>
+      </div>
+      <div class="col-lg-8 col-md-7">
+        <div class="detail-info">
+          <span class="badge">
+            <img src="../../assets/icons/dots.png"/>
+            Pure veg
+          </span>
+          <div class="dz-head">
+            <h2 class="title">{{selectedProduct.title}}</h2>
+            <div class="rating">
+              <fa-icon [icon]="starIcon" class="star-icon"></fa-icon>
+              <span>
+                <strong class="text-dark">{{selectedProduct.rating}}</strong>
+                - 20 reviews
+              </span>
+            </div>
+          </div>
+          <p class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br/>industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type <br/> and scrambled it to make a type specimen book.</p>
+          <ul class="detail-list">
+            <li>
+              Price
+              <span class="d-list-price">{{selectedProduct.price}}</span>
+            </li>
+            <li>
+              Quantity
+              <div class="btn-qty">
+                <app-quantity-selector [(quantity)]="selectedProduct.qty"></app-quantity-selector>
+              </div>
+            </li>
+          </ul>
+          <h6 class="title-2">Add On</h6>
+          <ul class="add-product">
+          <li>
+            <div class="mini-model">
+              <div class="dz-media-2">
+                <img src="../../assets/images/fries.jpg"/>
+              </div>
+              <div class="dz-content">
+                <p class="title-3">French Fries</p>
+                <div class="search-content">
+                  <input class="form-check-input" type="checkbox"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="mini-model">
+              <div class="dz-media-2">
+                <img src="../../assets/images/butter.jpg"/>
+              </div>
+              <div class="dz-content">
+                <p class="title-3">Extra Cheese</p>
+                <div class="search-content">
+                  <input class="form-check-input" type="checkbox"/>
+                </div>
+              </div>
+            </div>      
+          </li>
+          <li>  <div class="mini-model">
+            <div class="dz-media-2">
+              <img src="../../assets/images/drink.jpg"/>
+            </div>
+            <div class="dz-content">
+              <p class="title-3">Cold Drink</p>
+              <div class="search-content">
+                <input class="form-check-input" type="checkbox"/>
+              </div>
+            </div>
+          </div></li>
+          <li>  <div class="mini-model">
+            <div class="dz-media-2">
+              <img src="../../assets/images/cake.jpg"/>
+            </div>
+            <div class="dz-content">
+              <p class="title-3">Choco Lava</p>
+              <div class="search-content">
+                <input class="form-check-input" type="checkbox"/>
+              </div>
+            </div>
+          </div></li>
+          </ul>
+          <div class="d-lg-flex justify-content-between">
+             <ul>
+              <li>
+                <a class="cart-btn">
+                  <span>Add to Cart
+                    <fa-icon [icon]="bagIcon" class="bag-icon"></fa-icon>
+                  </span>
+                </a>
+              </li>
+             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+   </div>
+   <div class="content-inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="nav nav-tabs tab-style-1" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1" (click)="selectTab('Description')">
+                <fa-icon [icon]="globeIcon"></fa-icon>
+                <span class="d-inline">Description</span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" role="tab" tabindex="-1" (click)="selectTab('Info')">
+                <fa-icon [icon]="imgIcon"></fa-icon>
+                <span class="d-inline">Additional Information</span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" data-bs-toggle="tab" aria-selected="false" role="tab" tabindex="-1" (click)="selectTab('Reviews')">
+                <fa-icon [icon]="gearIcon"></fa-icon>
+                <span class="d-inline">Product Reviews</span>
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content">
+              <div id="web-design-1"  *ngIf="selectedTab === 'Description'">
+                <p class="m-b10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't hidden in the middle of text.</p>
+                <p class="m-b10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                <ul class="list-check">
+                  <li><fa-icon [icon]="tickIcon" class="tick"></fa-icon>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and </li>
+                  <li><fa-icon [icon]="tickIcon" class="tick"></fa-icon>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </li>
+                </ul>
+              </div>
+            <div id="graphic-design-1"  *ngIf="selectedTab === 'Info'">
+               <table>
+                <tbody>
+                  <tr>
+                    <td>{{selectedProduct.title}}</td>
+                    <td>Small, Medium & Large</td>
+                  </tr>
+                  <tr>
+                    <td>Toppings</td>
+                    <td>Onion, Tomato, Olives</td>
+                  </tr>
+                  <tr>
+                    <td>Rating</td>
+                    <td> <fa-icon [icon]="starIcon" class="star-icon"></fa-icon></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+               </table>
+            </div>
+            <div id="development-1" *ngIf="selectedTab === 'Reviews'">
+             
+              <p>bye</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+   </div>
+</section>
+
+
+  <script>
+    var QtyInput = (function () {
+	var $qtyInputs = $(".qty-input");
+
+	if (!$qtyInputs.length) {
+		return;
+	}
+
+	var $inputs = $qtyInputs.find(".product-qty");
+	var $countBtn = $qtyInputs.find(".qty-count");
+	var qtyMin = parseInt($inputs.attr("min"));
+	var qtyMax = parseInt($inputs.attr("max"));
+
+	$inputs.change(function () {
+		var $this = $(this);
+		var $minusBtn = $this.siblings(".qty-count--minus");
+		var $addBtn = $this.siblings(".qty-count--add");
+		var qty = parseInt($this.val());
+
+		if (isNaN(qty) || qty <= qtyMin) {
+			$this.val(qtyMin);
+			$minusBtn.attr("disabled", true);
+		} else {
+			$minusBtn.attr("disabled", false);
+			
+			if(qty >= qtyMax){
+				$this.val(qtyMax);
+				$addBtn.attr('disabled', true);
+			} else {
+				$this.val(qty);
+				$addBtn.attr('disabled', false);
+			}
+		}
+	});
+
+	$countBtn.click(function () {
+		var operator = this.dataset.action;
+		var $this = $(this);
+		var $input = $this.siblings(".product-qty");
+		var qty = parseInt($input.val());
+
+		if (operator == "add") {
+			qty += 1;
+			if (qty >= qtyMin + 1) {
+				$this.siblings(".qty-count--minus").attr("disabled", false);
+			}
+
+			if (qty >= qtyMax) {
+				$this.attr("disabled", true);
+			}
+		} else {
+			qty = qty <= qtyMin ? qtyMin : (qty -= 1);
+			
+			if (qty == qtyMin) {
+				$this.attr("disabled", true);
+			}
+
+			if (qty < qtyMax) {
+				$this.siblings(".qty-count--add").attr("disabled", false);
+			}
+		}
+
+		$input.val(qty);
+	});
+})();
+
+  </script>
   
