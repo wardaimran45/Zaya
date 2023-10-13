@@ -13,6 +13,7 @@ export class NavComponent  implements OnInit{
   userIcon = faUser;
   cartIcon = faShoppingBag
   public isNavbarFixed = false;
+  public icon = false;
 
   constructor(){
 
@@ -29,8 +30,10 @@ export class NavComponent  implements OnInit{
 
     if (scrollY > scrollThreshold && !this.isNavbarFixed) {
       this.isNavbarFixed = true;
+      this.icon = true
     } else if (scrollY <= scrollThreshold && this.isNavbarFixed) {
       this.isNavbarFixed = false;
+      this.icon = false;
     }
   }
 

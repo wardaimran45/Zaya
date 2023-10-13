@@ -5,6 +5,7 @@ import { RegisterComponent } from './user/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   {
@@ -26,8 +27,11 @@ const routes: Routes = [
   {
     path: 'product-detail/:id',
     component: ProductDetailComponent
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent
   }
-
 
 ];
 

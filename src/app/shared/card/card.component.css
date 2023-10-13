@@ -25,7 +25,7 @@
     -ms-transition: all 0.5s;
     transition: all 0.5s;
     height: 420px;
-    width: 280px;
+    width: 270px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
@@ -120,4 +120,7 @@
     -webkit-transition: all 0.5s;
     -ms-transition: all 0.5s;
     transition: all 0.5s;
+}
+.row{
+    margin: unset;
 }

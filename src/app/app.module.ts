@@ -24,6 +24,9 @@ import { MenuFooterComponent } from './menu-footer/menu-footer.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { QuantitySelectorComponent } from './quantity-selector/quantity-selector.component';
 import { FormsModule } from '@angular/forms';
+import { ReviewComponent } from './review/review.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 
@@ -43,7 +46,9 @@ import { FormsModule } from '@angular/forms';
         NavbarComponent,
         MenuFooterComponent,
         ProductDetailComponent,
-        QuantitySelectorComponent
+        QuantitySelectorComponent,
+        ReviewComponent,
+        CheckoutComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -56,7 +61,8 @@ import { FormsModule } from '@angular/forms';
         AngularFireModule.initializeApp(environment.firebase),
         AngularFireAuthModule,
         AngularFirestoreModule,
-        FormsModule
+        FormsModule,
+        BrowserAnimationsModule
 
     ],
     exports: [

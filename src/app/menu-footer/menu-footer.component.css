@@ -33,7 +33,7 @@
     line-height: 1;
     left: 15px;
     top: 140px;
-    color: #7da640;
+    color: #ee2737;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -45,7 +45,7 @@
     line-height: 1;
     left: 15px;
     top: 215px;
-    color: #7da640;
+    color: #ee2737;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -58,7 +58,7 @@
     left: 15px;
     margin-right: 10px;
     top: 293px;
-    color: #7da640;
+    color: #ee2737;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -145,5 +145,5 @@
     line-height: 1.1;
 }
 .copyright-text a{
-    color: #7da640;
+    color: #ee2737;
 }

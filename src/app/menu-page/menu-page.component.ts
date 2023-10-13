@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AllProductsService } from '../services/all-products.service';
-import { Observable, map , filter} from 'rxjs';
+import { Observable} from 'rxjs';
 import { faFilter } from '@fortawesome/free-solid-svg-icons';
 import {ProductDetailService}  from '../services/product-detail.service';
 import { Router } from '@angular/router';

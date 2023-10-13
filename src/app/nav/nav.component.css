@@ -78,7 +78,7 @@ nav{
         font-size: 22px;
         background-color: white;
         color: black;
-        padding: 10px 15px;
+        padding: 8px 15px;
         border-radius: 5px;
         margin-right: 10px;
   }
@@ -86,7 +86,7 @@ nav{
     font-size: 22px;
     background-color:white;
     color: black;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border-radius: 5px;
 }
 .navbar.fixed {
@@ -95,4 +95,8 @@ nav{
 }
 .navbar{
   background-color: transparent;
+}
+.a{
+  color: white;
+  background-color: #EE2737;
 }

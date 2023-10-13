@@ -16,6 +16,9 @@ export class AllProductsService {
   getProducts(): Observable<any[]> {  
     return this.db.collection('products').valueChanges();
   }
+  getSpecialProducts():Observable<any[]> {  
+    return this.db.collection('menu').valueChanges();
+  }
 
   getFilteredProducts(category: string): Observable<any[]> {
     return this.getProducts().pipe(

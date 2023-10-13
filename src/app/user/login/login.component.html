@@ -1,13 +1,15 @@
+
 <div class="form-wrapper row" >
     <div class="col-lg-4"></div>
  <div class="inner-div col-lg-4 shadow">
     <h1 class="font-bold text-center">Welcome Back</h1>
     <p class=" text-center text-color-form">Login as User</p>
     <div class="w-full">
-        <form class="rounded px-8 pt-6 pb-8 mb-4">
+        <app-alert *ngIf="showAlert" [color]="alertColor">{{alertMsg}}</app-alert>
+        <form class="rounded px-8 pt-6 pb-8 mb-4" #loginForm=""ngForm (ngSubmit)="login()">
             <div class="mb-4">
                 <label class="font-semibold mb-2" style="font-weight: 600">Email*</label>
-                <app-input type="email" placeholder="Enter Your Email"></app-input>
+                <app-input type="email" placeholder="Enter Your Email" ></app-input>
             </div>
             
             <div class="mb-4">

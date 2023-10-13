@@ -53,7 +53,6 @@ export class RegisterComponent {
       const userCred = await this.auth.createUserWithEmailAndPassword(
         email as string, password as string
       )
-      console.log(userCred)
     }
     catch(e){
       console.error(e)
@@ -64,6 +63,7 @@ export class RegisterComponent {
     }
     this.alertMsg = 'Success! Your account has been created'
     this.alertColor = 'green'
+    this.registerForm.reset();
   }
   
 }

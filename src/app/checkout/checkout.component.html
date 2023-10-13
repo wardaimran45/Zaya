@@ -1,0 +1,196 @@
+<app-navbar></app-navbar>
+<section class="checkout-section">
+    <div class="overlay-detail">
+        <div class="inner-banner">
+            <div class="container">
+                <div class="banner-head text-center">
+                    <h1>Shop Checkout</h1>
+                    <nav style="--bs-breadcrumb-divider: '>'; color: white;" aria-label="breadcrumb" class="bread">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item" aria-current="page">Shop Checkout</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="container">
+        <form class="shop-form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="widget">
+                        <h4 class="widget-title">Billing & Shipping Address</h4>
+                        <div class="form-group m-b20">
+                           <input type="text" placeholder="Pakistan" disabled value="Pakistan"/>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 m-b20">
+                                <input type="text" placeholder="First Name"/>
+                            </div>
+                            <div class="form-group col-md-6 m-b20">
+                                <input type="text" placeholder="Last Name" />
+                            </div>
+                           
+                        </div>
+                        <div class="form-group m-b20">
+                            <input type="text" placeholder="Company Name"/>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 m-b20">
+                                <input type="text" placeholder="Apartment, suite, unit etc."/>
+                            </div>
+                            <div class="form-group col-md-6 m-b20">
+                                <select placeholder="City">
+                                    <option value="1" class="d-menu dropdown-item">Lahore</option>
+                                    <option value="2" class="d-menu dropdown-item">Karachi</option>
+                                    <option value="3" class="d-menu dropdown-item">Islamabad</option>
+                                    <option value="4" class="d-menu dropdown-item">Gujranwala</option>
+                                    <option value="5" class="d-menu dropdown-item">Faisalabad</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 m-b20">
+                                <input type="text" placeholder="Province"/>
+                            </div>
+                            <div class="form-group col-md-6 m-b20">
+                                <input type="text" placeholder="Postcode/Zip" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6 m-b20">
+                                <input type="email" placeholder="Email"/>
+                            </div>
+                            <div class="form-group col-md-6 m-b20">
+                                <input type="tel" placeholder="Phone" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      Create an Account 
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="show">
+                                    <p class="content">
+                                        Create an account by click on the link below. If you are a <br/> returning customer please login at the top of the page <code><a href="/register">Register Now</a></code>
+                                    </p>
+                                  </div>
+                                </div> 
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              Ship to a different address
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="show">
+                            <p class="content-2">If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing & Shipping section.</p>
+                            <div class="hidden-form">
+                                <div class="form-group m-b20">
+                                    <input type="text" placeholder="Address" />
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 m-b20">
+                                        <input type="text" placeholder="Apartment, suite, unit etc."/>
+                                    </div>
+                                    <div class="form-group col-md-6 m-b20">
+                                        <input type="text" placeholder="Town/ City" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-md-6 m-b20">
+                                        <input type="text" placeholder="Province"/>
+                                    </div>
+                                    <div class="form-group col-md-6 m-b20">
+                                        <input type="text" placeholder="Postcode/ Zip" />
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                          </div>
+                        </div> 
+                </div>
+                <div class="form-group widget-2">
+                    <textarea class="form-control" rows="5" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                </div>
+                </div>
+            </div>
+        </form>
+        <div class="dz-divider bg-gray-dark icon-center my-5">
+            <fa-icon [icon]="circleIcon" class="circle-icon"></fa-icon>
+             </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="widget">
+                    <h4 class="widget-title">Your Order</h4>
+                    <table class="table-bordered check-tbl">
+                        <thead class="text-center">
+                            <tr>
+                                <th>IMAGE</th>
+                                <th>PRODUCT NAME</th>
+                                <th>TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of selectedItems">
+                                <td ><img [src]="item.image" class="img-tb"/></td>
+                                <td>{{item.title}}</td>
+                                <td>{{item.price}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <form class="shop-form-widget">
+                    <h4 class="widget-title">Order Total</h4>
+                    <table class="table-bordered check-tbl mb-4" >
+                        <tbody>
+                            <tr>
+                                <td>Order Subtotal</td>
+                                <td>$125.96</td>
+                            </tr>
+                            <tr> 
+                                <td>Shipping</td>
+                                <td>Free Shipping</td></tr>
+                            <tr>
+                                <td>Coupon</td>
+                                <td>$28</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$506.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4 class="widget-title">Payment Method</h4>
+                    <div class="form-group m-b20">
+                        <input type="text" class="form-control-1" placeholder="Name on Card">
+                    </div>
+                    <div class="form-group m-b20">
+                        <input type="text" class="form-control-1" placeholder="Credit Card Number">
+                    </div>
+                    <div class="form-group m-b20">
+                        <input type="text" class="form-control-1" placeholder="Card Verification Number">
+                    </div>
+                    
+                      <div class="form-group">
+                        <button class="order-btn">Place Order Now</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+        
+       </div>
+</section>
+<app-menu-footer></app-menu-footer>

@@ -1,5 +1,6 @@
 <app-navbar></app-navbar>
 <section class="productDetail-section">
+
   <div class="overlay-detail">
     <div class="inner-banner">
         <div class="container">
@@ -16,7 +17,6 @@
     </div>
    </div>
    <div class="container">
-    <ng-container *ngIf="selectedProduct">
     <div class="row product-detail">
       <div class="col-lg-4 col-md-5">
           <div class="detail-media">
@@ -106,7 +106,7 @@
           <div class="d-lg-flex justify-content-between">
              <ul>
               <li>
-                <a class="cart-btn">
+                <a class="cart-btn" (click)="addToCart(selectedProduct)">
                   <span>Add to Cart
                     <fa-icon [icon]="bagIcon" class="bag-icon"></fa-icon>
                   </span>
@@ -117,7 +117,6 @@
         </div>
       </div>
     </div>
-  </ng-container>
    </div>
    <div class="content-inner">
     <div class="container">
@@ -153,7 +152,7 @@
                 </ul>
               </div>
             <div id="graphic-design-1"  *ngIf="selectedTab === 'Info'">
-               <table>
+               <table class="table-bordered check-tb1">
                 <tbody>
                   <tr>
                     <td>{{selectedProduct.title}}</td>
@@ -165,35 +164,68 @@
                   </tr>
                   <tr>
                     <td>Rating</td>
-                    <td> <fa-icon [icon]="starIcon" class="star-icon"></fa-icon></td>
+                    <td> <fa-icon [icon]="starIcon" class="star-icon"></fa-icon>
+                      <fa-icon [icon]="starIcon" class="star-icon"></fa-icon>
+                      <fa-icon [icon]="starIcon" class="star-icon"></fa-icon>
+                      <fa-icon [icon]="starIcon" class="star-icon"></fa-icon>
+                      <fa-icon [icon]="starOutline" class="star-icon-2"></fa-icon></td>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Shipping Charges</td>
+                    <td>Free Shipping</td>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Add More</td>
+                    <td>Coke, Cheese, Choco lava</td>
                   </tr>
                   <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Delivery Time</td>
+                    <td>30 mins</td>
                   </tr>
                 </tbody>
                </table>
             </div>
             <div id="development-1" *ngIf="selectedTab === 'Reviews'">
-             
-              <p>bye</p>
+              <div class="comment-area">
+                <ul class="comment-list">
+                  <li class="comment" *ngFor="let review of reviews$ | async">
+                     <div class="comment-body">
+                      <div class="comment-author">
+                        <img [src]="review.email" class="review-img"/>
+                        <cite>{{review.name}}</cite></div>
+                      <div class="star-rating">
+                      
+                          <fa-icon *ngFor="let i of [1, 2, 3, 4, 5]" [icon]="getStarIcon(i, review.star)" [ngClass]="{'solid': i <= review.star, 'regular': i > review.star}"></fa-icon>
+                      </div>
+                      <p>{{review.content}}</p>
+                     </div>
+                  </li>
+                </ul>
+              </div>
+              <app-review></app-review>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
    </div>
+   <div class="container">
+    <div class="text-center section-head">
+      <h2>Special Menu</h2>
+    </div>
+    <div class="swiper-btn-lr" >
+      <app-card></app-card>
+      <div class="pagination">
+        <div class="img-btn-prev">
+          <fa-icon [icon]="arrowLeft" class="arrow"></fa-icon>
+        </div>
+        <div class="img-btn-next">
+          <fa-icon [icon]="arrowRight" class="arrow"></fa-icon>
+        </div>
+      </div>
+    </div>
+   </div>
+   <app-menu-footer></app-menu-footer>
 </section>
 
 
