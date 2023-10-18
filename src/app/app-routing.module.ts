@@ -6,6 +6,12 @@ import { HomeComponent } from './home/home.component';
 import { MenuPageComponent } from './menu-page/menu-page.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import {AngularFireAuthGuard, redirectUnauthorizedTo  } from '@angular/fire/compat/auth-guard'
+import { AuthGuard } from './guards/auth.guard';
+import { OrderComponent } from './order/order.component';
+import { ShopCartComponent } from './shop-cart/shop-cart.component';
+
+const redirectUnauthorizedToHome = () => redirectUnauthorizedTo('/')
 
 const routes: Routes = [
   {
@@ -31,7 +37,16 @@ const routes: Routes = [
   {
     path: 'checkout',
     component: CheckoutComponent
+  },
+  {
+    path: 'order-placed',
+    component: OrderComponent
+  },
+  {
+    path: 'shop-cart',
+    component: ShopCartComponent
   }
+  
 
 ];
 

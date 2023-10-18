@@ -27,6 +27,9 @@ import { FormsModule } from '@angular/forms';
 import { ReviewComponent } from './review/review.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { OrderComponent } from './order/order.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+import { ShopCartComponent } from './shop-cart/shop-cart.component';
 
 
 
@@ -48,7 +51,10 @@ import { CheckoutComponent } from './checkout/checkout.component';
         ProductDetailComponent,
         QuantitySelectorComponent,
         ReviewComponent,
-        CheckoutComponent
+        CheckoutComponent,
+        OrderComponent,
+        DropdownComponent,
+        ShopCartComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

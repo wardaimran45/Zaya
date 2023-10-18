@@ -1,5 +1,9 @@
-import { Component ,OnInit} from '@angular/core';
+import { Component ,OnInit, ViewChild} from '@angular/core';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
+import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
+
 
 @Component({
   selector: 'app-login',
@@ -7,6 +11,7 @@ import {AngularFireAuth} from '@angular/fire/compat/auth';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
+  @ViewChild('loginForm') loginForm: NgForm | undefined;
   credentials ={
     email: '',
     password: ''
@@ -15,10 +20,11 @@ export class LoginComponent implements OnInit{
    alertMsg = "Please wait! We are logging you in."
    alertColor = 'blue'
    inSubmission = false
-  constructor(private auth: AngularFireAuth){}
+  constructor(private auth: AngularFireAuth, private router: Router, private authService: AuthService){}
   ngOnInit(): void {
     
   }
+
   async login(){
     this.showAlert = true
     this.alertMsg = "Please wait! We are logging you in."
@@ -28,6 +34,11 @@ export class LoginComponent implements OnInit{
       await this.auth.signInWithEmailAndPassword(
         this.credentials.email, this.credentials.password
       )
+      if (this.loginForm) {
+        this.loginForm.resetForm();
+      }
+      this.authService.setAuthenticated();
+      this.router.navigate(['/checkout']);
     }
     catch(e){
       this.inSubmission = false

@@ -15,6 +15,9 @@
     position: relative;
     z-index: 1;
 }
+.footer-widget ul li p{
+    cursor: pointer;
+}
 .footer-widget{
     margin-bottom: 30px;
 }
@@ -78,15 +81,14 @@
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #CCCCCC;
+    cursor: pointer;
 }
 .widget-services ul li{
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .bg-1{
     margin-top: -200px;
-    /* position: absolute;
-    left: 0;
-    bottom: 10px; */
     animation: dzMove 7s infinite;;
 }
 .bg-2{

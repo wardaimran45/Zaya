@@ -1,0 +1,11 @@
+<div class="mini-cart-dropdown" >
+    <table>
+        <tbody>
+            <tr *ngFor="let item of cartItems" class="cart-item">
+                <td><img class="tb-img" [src]="item.image"/></td>
+                <td class="td-item"><p class="title">{{item.title}}</p><span class="price">${{item.price * item.qty | number:'1.2-2'}}</span></td>
+                <td  (click)="onCloseButtonClick(item)" class="close-btn">x</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

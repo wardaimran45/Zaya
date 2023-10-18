@@ -1,7 +1,8 @@
-import { Component, OnInit ,HostListener, ElementRef, Renderer2  } from '@angular/core';
+import { Component, OnInit ,HostListener, ElementRef, Renderer2 , Input } from '@angular/core';
 import { faEur, faFilm } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { CartService } from '../services/cart.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,12 +10,13 @@ import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  @Input() itemCount: number = 0;
   filmIcon = faFilm;
   userIcon = faUser;
   cartIcon = faShoppingBag
   public isNavbarFixed = false;
-
-  constructor(){
+  showMiniCart: boolean = false;
+  constructor(private cartService: CartService){
 
   }
   ngOnInit(): void {
@@ -32,6 +34,12 @@ export class NavbarComponent {
     } else if (scrollY <= scrollThreshold && this.isNavbarFixed) {
       this.isNavbarFixed = false;
     }
+  }
+  toggleMiniCart() {
+    this.showMiniCart = !this.showMiniCart;
+  }
+  get cartItemCount() {
+    return this.cartService.cartItemCount;
   }
 
 }

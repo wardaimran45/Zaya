@@ -43,12 +43,13 @@
           <ul class="detail-list">
             <li>
               Price
-              <span class="d-list-price">{{selectedProduct.price}}</span>
+              <span class="d-list-price">${{selectedProduct.price}}</span>
             </li>
             <li>
               Quantity
               <div class="btn-qty">
-                <app-quantity-selector [(quantity)]="selectedProduct.qty"></app-quantity-selector>
+                <app-quantity-selector
+                (quantityChange)="updateTotalPrice($event)" (qty)="selectedProduct.qty"></app-quantity-selector>
               </div>
             </li>
           </ul>

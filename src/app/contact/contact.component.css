@@ -131,10 +131,7 @@
     top: 5px;
     line-height: 30px;
 }
-/* .text-area{
-     display: inline;
-     margin-left: 10px;
-} */
+
 .list-area li{
     color: #fff;
     display: flex;
@@ -144,7 +141,6 @@
 }
 
 /* Time */
-
 .contact-section::after{
     content: "";
     height: 125px;
@@ -155,14 +151,3 @@
     z-index: -1;
     margin-top: -100px;
 }
-/* .contact-section-after{
-    content: "";
-    height: 125px;
-    width: 100%;
-    background-color: gray;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-} */
-  

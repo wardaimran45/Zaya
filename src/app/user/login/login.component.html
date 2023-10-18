@@ -6,15 +6,15 @@
     <p class=" text-center text-color-form">Login as User</p>
     <div class="w-full">
         <app-alert *ngIf="showAlert" [color]="alertColor">{{alertMsg}}</app-alert>
-        <form class="rounded px-8 pt-6 pb-8 mb-4" #loginForm=""ngForm (ngSubmit)="login()">
+        <form class="rounded px-8 pt-6 pb-8 mb-4" #loginForm="ngForm" (ngSubmit)="login()">
             <div class="mb-4">
                 <label class="font-semibold mb-2" style="font-weight: 600">Email*</label>
-                <app-input type="email" placeholder="Enter Your Email" ></app-input>
+                <input type="email" placeholder="Enter Your Email" name="email"  #email="ngModel" [(ngModel)]="credentials.email" class="i-tag bg-white-200 appearance-none rounded w-full py-2 px-4 text-gray-700"/>
             </div>
             
             <div class="mb-4">
                 <label class="font-semibold mb-2" style="font-weight: 600">Password*</label>
-            <app-input placeholder="Create a password" type="password"></app-input>
+            <input placeholder="Create a password" type="password" name="password" #password="ngModel" [(ngModel)]="credentials.password" class="i-tag bg-white-200 appearance-none rounded w-full py-2 px-4 text-gray-700"/>
             </div>
           
             <button class="signup-btn text-white font-semibold w-full">Login</button>

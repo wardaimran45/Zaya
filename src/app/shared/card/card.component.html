@@ -6,9 +6,9 @@
             </div>
             <div class="dz-content">
                 <h4 class="dz-title"><a>{{menu.title}}</a></h4>
-                <p>{{menu.content}}</p>
-                <h5 class="dz-price text-primary">{{menu.price}}</h5>
-                <a class="btn btn-primary btn-hover-2 cart-btn">Add to Cart</a>
+                <p>{{menu.description}}</p>
+                <h5 class="dz-price text-primary">${{menu.price}}</h5>
+                <a class="btn btn-primary btn-hover-2 cart-btn" (click)="addToCart(menu)">Add to Cart</a>
             </div>
         </div>
         

@@ -1,0 +1,232 @@
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+.shopCart-section{
+    width: 100%;
+}
+
+.productDetail-section{
+    width: 100%;
+}
+.product-detail{
+    padding-left: 150px;
+    padding-right: 190px;
+}
+.banner-head{
+    margin-top: 150px;
+}
+
+.overlay-detail {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 50px;
+}
+
+.inner-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha (0.5) for the desired opacity */
+    z-index: 2;
+}
+
+.overlay-detail::before {
+    content: "";
+    background-image: url('../../assets/images/bnr4.jpg');
+    background-size: cover;
+    background-position-y: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.banner-head h1{
+    color: #fff;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: 'Lobster';
+}
+.bread{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.breadcrumb{
+    background-color:#EE2737 ;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    margin: 0;
+    border-radius: 10px;
+    justify-content: center;
+    width: 260px;
+    align-items: center;
+    padding: 13px 30px;
+}
+.breadcrumb-item{
+    color: white;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+    color: white;
+}
+.content-wrapper{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.dz-shop-card{
+    position: relative;
+    overflow: hidden;
+}
+.style-1 {
+    display: flex;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    margin-bottom: 20px;
+}
+.dz-media {
+    position: relative;
+    width: 100px;
+    min-width: 100px;
+    overflow: hidden;
+}
+.dz-media img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.dz-content{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.dz-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.dz-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.dz-name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--title);
+}
+.rate {
+    background: #FE9F10;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+}
+.dz-body ul {
+    display: flex;
+    margin: 0 -10px;
+}
+.dz-body ul li {
+    margin: 0 10px;
+    color: #727272;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.dz-body p {
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+}
+.text-primary{
+    color: #7da640 !important;
+    font-weight: 500;
+}
+.dot-icon{
+    display: inline !important;
+    margin-right: 10px;
+}
+.scooter-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.list-icon{
+    display: flex; 
+}
+.dz-shop-card:hover {
+    border-color: transparent;
+    box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
+}
+.side-bar{
+    padding-left: 20px;
+    padding-bottom: 1px;
+    position: sticky;
+    z-index: 100;
+    top: 100px;
+}
+.row-content{
+    margin-left: 150px;
+}
+.widget-title{
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 1.25rem;
+    padding-bottom: 12px;
+}
+.widget-title:before{
+    left: 0;
+    width: 6px;
+    border-radius: 30px;
+    background: #ffc822;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 6px;
+}
+.widget-title:after{
+    left: 12px;
+    width: 53px;
+    height: 4px;
+    background: #7da640;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    border-radius: 3px;
+}
+.dz-media-1{
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.dz-media-1 img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.dz-content-2{
+    margin-left: 15px;
+    width: 100%;
+}

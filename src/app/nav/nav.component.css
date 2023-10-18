@@ -11,7 +11,6 @@
     transition: all 0.5s;
 }
 nav{
-    /* margin-top: 15px; */
     padding: 20px 0 10px 0;
     background: transparent;
     z-index: 2;
@@ -86,12 +85,12 @@ nav{
     font-size: 22px;
     background-color:white;
     color: black;
+    position: relative;
     padding: 8px 15px;
     border-radius: 5px;
 }
 .navbar.fixed {
-  background-color: #ffffff; /* White background color */
- 
+  background-color: #ffffff; 
 }
 .navbar{
   background-color: transparent;
@@ -99,4 +98,26 @@ nav{
 .a{
   color: white;
   background-color: #EE2737;
+}
+/* CART */
+.nav-item-card{
+    position: relative;
+}
+
+.mini-cart-dropdown {
+  position: absolute; 
+  top: 100%;
+  right: 0;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  background-color: gray; 
+  color: white; 
+  border-radius: 50%; 
+  padding: 5px 8px; 
+}
+.nav-item-card{
+  position: relative;
 }

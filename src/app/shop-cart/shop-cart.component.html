@@ -1,0 +1,68 @@
+<app-navbar></app-navbar>
+<section class="shopCart-section">
+    <div class="overlay-detail">
+        <div class="inner-banner">
+            <div class="container">
+                <div class="banner-head text-center">
+                    <h1>Shop Cart</h1>
+                    <nav style="--bs-breadcrumb-divider: '>'; color: white;" aria-label="breadcrumb" class="bread">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item" aria-current="page">Shop Cart</li>
+                        </ol>
+                      </nav>
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="container content-wrapper">
+        <div class="row row-content">
+            <div class="col-lg-8">
+                <div>
+                    <h5 class="title">Related Products</h5>
+                </div>
+                <div class="dz-shop-card style-1" *ngFor="let product of products$ | async">
+                    <div class="dz-media">
+                        <img [src]="product.image" alt="/">
+                    </div>
+                    <div class="dz-content">
+                        <div class="dz-head">
+                            <h6 class="dz-name mb-0">
+                                <svg class="m-r10 dot-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="16" height="16" stroke="#0F8A65"></rect>
+                                <circle cx="8.5" cy="8.5" r="5.5" fill="#0F8A65"></circle>
+                                </svg>
+                                <a href="product-detail.html">{{product.title}}</a>
+                            </h6>
+                            <div class="rate">
+                                <fa-icon [icon]="starIcon"></fa-icon> {{product.rating}}
+                            </div>
+                        </div>
+                        <div class="dz-body">
+                            <ul class="dz-meta">
+                                <li>By <span class="text-primary font-weight-500">Burger Farm</span></li>
+                                <li class="list-icon"><img class="scooter-icon" src="../../assets/icons/food-delivery.png"/> 30 min</li>
+                            </ul>
+                            <p class="mb-0"><span class="text-primary font-weight-500">${{product.price}}.00</span> For a one</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                  <aside class="side-bar">
+                    <div class="shop-filter">
+                        <div class="widget-title"><h5 class="title">Cart</h5></div>
+                        <div class="cart-item">
+                            <div class="dz-media-1"></div>
+                            <div class="dz-content-1">
+                                <div class="dz-head-1"></div>
+                                <div class="dz-body-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                  </aside>
+            </div>
+        </div>
+
+       </div>
+</section>

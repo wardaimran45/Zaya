@@ -39,8 +39,15 @@
         <a href="/login"><fa-icon [icon]="userIcon" class="icon-1" [class.a]="icon"></fa-icon></a>
         
       </li>
-      <li class="nav-item">
-        <fa-icon [icon]="cartIcon" class="icon-2" [class.a]="icon"></fa-icon>
+      <li class="nav-item nav-item-cart">
+        <fa-icon [icon]="cartIcon" class="icon-2" [class.a]="icon"  (click)="toggleMiniCart()"> 
+        </fa-icon>
+        <span class="badge" *ngIf="cartItemCount > 0">
+          {{cartItemCount}}
+        </span>
+        <div class="mini-cart-dropdown" *ngIf="showMiniCart">
+          <app-dropdown></app-dropdown>
+        </div>
       </li>
      </ul>
     </div>
