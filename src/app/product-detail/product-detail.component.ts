@@ -90,7 +90,7 @@ export class ProductDetailComponent implements OnInit {
           price: this.selectedProduct.price,
         }];
         this.cartService.addToCart(selectedProduct);
-        this.router.navigate(['checkout']);
+        // this.router.navigate(['checkout']);
     this.selectedProduct.qty = 1;
     console.log("product detail page",selectedProduct)
   }

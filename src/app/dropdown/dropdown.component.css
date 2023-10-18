@@ -34,7 +34,7 @@
 .price{
     font-size: 16px;
     font-weight: 500;
-    color: #7da640;
+    color: #ff0003;
     margin-left: 10px;
 }
 .close-btn{
@@ -55,4 +55,31 @@
 }
 .td-item{
     font-weight: 600;
+}
+.view-cart{
+    background-color: #ff0003;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+        line-height: 1.5;
+  
+}
+.btns-end{
+    display: flex;
+    padding: 15px 5px;
+    justify-content: center;
+}
+.view-menu{
+    margin-left: 10px;
+    padding: 12px 37px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    border: 1px solid #ff0003;
+    color: #ff0003;
+    background-color: white;
+
 }

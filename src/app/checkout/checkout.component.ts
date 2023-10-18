@@ -46,6 +46,17 @@ export class CheckoutComponent implements OnInit{
     address: this.address
   })
  ngOnInit(): void {
+  const formDataJSON = localStorage.getItem('orderFormData');
+  console.log("ccc",formDataJSON);
+  if (formDataJSON) {
+    // If the data exists in local storage, parse it back to a JavaScript object
+    const formData = JSON.parse(formDataJSON);
+    console.log("form Data", formData);
+
+    // Set the form values with the retrieved data using patchValue
+    this.orderForm.patchValue(formData);
+  }
+
 }
 
 getTotalAmount() {
@@ -53,31 +64,28 @@ getTotalAmount() {
 }
 
 placeOrder() {
-
-  // if(this.orderForm.valid){
-  //   const formData = this.orderForm.value
-  //   console.log("form",formData);
-    
-  // }
   const formData = this.orderForm.value;
   const cartItems = this.cartItems;
+  const formDataJSON = JSON.stringify(formData);
+  localStorage.setItem('orderFormData', formDataJSON);
   const orderDetails = {
-    ...formData, // Spread the form data
-    cartItems: cartItems // Add cart items as a property
-};
+    ...formData,
+    cartItems: cartItems
+  };
+
   if (this.authService.isAuthenticated()) {
-      this.orderService.saveOrder(orderDetails)
-    alert("Order Placed")
+    // Save the order and then remove the stored form data from local storage
+    this.orderService.saveOrder(orderDetails);
+    localStorage.removeItem('orderFormData');
+    
+    alert("Order Placed");
     this.router.navigate(['/order-placed']);
-   
-  } 
-  else {
+  } else {
     this.router.navigate(['/login']);
   }
+
   console.log("checking", formData);
   console.log("checking cart", cartItems);
-  
-  
 }
 
 

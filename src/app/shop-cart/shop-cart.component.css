@@ -84,6 +84,7 @@
 .title{
     font-size: 20px;
     font-weight: 600;
+    margin-bottom: 10px;
 }
 .dz-shop-card{
     position: relative;
@@ -160,7 +161,7 @@
     color: #666666;
 }
 .text-primary{
-    color: #7da640 !important;
+    color: #EE2737 !important;
     font-weight: 500;
 }
 .dot-icon{
@@ -182,8 +183,6 @@
 .side-bar{
     padding-left: 20px;
     padding-bottom: 1px;
-    position: sticky;
-    z-index: 100;
     top: 100px;
 }
 .row-content{
@@ -209,7 +208,7 @@
     left: 12px;
     width: 53px;
     height: 4px;
-    background: #7da640;
+    background: #EE2737;
     content: '';
     position: absolute;
     bottom: 0;
@@ -222,11 +221,81 @@
     border-radius: 10px;
 }
 .dz-media-1 img{
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 10px;
 }
 .dz-content-2{
     margin-left: 15px;
     width: 100%;
+}
+.title-2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.close-btn-2{
+    color: #ff0003;
+    font-size: 18px;
+    position: absolute;
+    right: 80px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.dz-body-1{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    font-size: 18px;
+    color: #EE2737 !important;
+    font-weight: 600;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+    margin-right: 80px;
+}
+.dz-head-1{
+    display: flex;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.q-selector{
+    margin-right: 110px;
+}
+.arrow-icon{
+    margin-left: 10px;
+    font-size: 22px;
+    color: white;
+}
+.arrow-icon:hover{
+    font-size: 22px;
+    color: #EE2737;
+}
+.order-btn{
+    margin-top: 30px;
+    background-color: #EE2737;
+    color: white;
+    padding: 15px 30px;
+    font-weight: 500;
+    width: 90%;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 6px;
+}
+.order-btn:hover{
+    background-color: white;
+    border: 1px solid #EE2737;
+    color: #EE2737;
+    border-radius: 6px;
 }

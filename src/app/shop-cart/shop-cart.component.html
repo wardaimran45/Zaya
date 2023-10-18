@@ -52,13 +52,22 @@
                   <aside class="side-bar">
                     <div class="shop-filter">
                         <div class="widget-title"><h5 class="title">Cart</h5></div>
-                        <div class="cart-item">
-                            <div class="dz-media-1"></div>
+                        <div class="cart-item" *ngFor="let items of cartItems">
+                            <div class="dz-media-1">
+                                <img [src]="items.image"/>
+                            </div>
                             <div class="dz-content-1">
-                                <div class="dz-head-1"></div>
-                                <div class="dz-body-1"></div>
+                                <div class="dz-head-1">
+                                    <h6 class="title-2">{{items.title}}</h6>
+                                    <a class="close-btn-2">x</a>
+                                </div>
+                                <div class="dz-body-1">
+                                    <div class="q-selector"><app-quantity-selector></app-quantity-selector></div>
+                                    <h5 class="price">${{items.price}}</h5>
+                                </div>
                             </div>
                         </div>
+                        <div><button (click)="orderNow()" class="order-btn">Order Now <fa-icon class="arrow-icon" [icon]="arrowIcon"></fa-icon></button></div>
                     </div>
                   </aside>
             </div>

@@ -1,8 +1,8 @@
 <div class="quantity-selector">
  <span class="vertical">
-    <button (click)="decrementQuantity()" class="quantity-button">-</button>
+    <button  (click)="incrementQuantity()" class="quantity-button">+</button>
     <input [(ngModel)]="qty" class="quantity-input" [defaultValue]="1" />
-    <button (click)="incrementQuantity()" class="quantity-button">+</button>
+    <button (click)="decrementQuantity()" class="quantity-button">-</button>
  </span>
   </div>
   
