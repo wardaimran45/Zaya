@@ -30,6 +30,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { OrderComponent } from './order/order.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { ShopCartComponent } from './shop-cart/shop-cart.component';
+import { ScrollService } from './services/scroll.service';
+import { RouterModule, Routes, Scroll } from '@angular/router';
+
 
 
 
@@ -56,7 +59,7 @@ import { ShopCartComponent } from './shop-cart/shop-cart.component';
         DropdownComponent,
         ShopCartComponent
     ],
-    providers: [],
+    providers: [ScrollService],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
@@ -68,12 +71,14 @@ import { ShopCartComponent } from './shop-cart/shop-cart.component';
         AngularFireAuthModule,
         AngularFirestoreModule,
         FormsModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        RouterModule.forRoot([], { scrollPositionRestoration: 'enabled' }),
 
     ],
     exports: [
         NavComponent
     ]
+    
         
 })
 export class AppModule { }

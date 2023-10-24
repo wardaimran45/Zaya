@@ -16,6 +16,10 @@ export class AllProductsService {
   getProducts(): Observable<any[]> {  
     return this.db.collection('products').valueChanges();
   }
+  getSomeProducts(): Observable<any[]> {  
+    return this.db.collection('someProducts').valueChanges();
+  }
+  
   getSpecialProducts():Observable<any[]> {  
     return this.db.collection('menu').valueChanges();
   }

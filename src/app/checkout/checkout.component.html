@@ -29,6 +29,9 @@
                         <div class="row">
                             <div class="form-group col-md-6 m-b20">
                                 <input type="text" placeholder="First Name" formControlName="fName" [formControl]="orderForm.controls.fName" required/>
+                                <div *ngIf="orderForm.controls.fName.invalid && orderForm.controls.fName.touched" class="text-danger t-error">
+                                    First Name is required.
+                                  </div>
                             </div>
                             <div class="form-group col-md-6 m-b20">
                                 <input type="text" placeholder="Last Name" name="Lname"/>
@@ -41,6 +44,9 @@
                         <div class="row">
                             <div class="form-group col-md-6 m-b20">
                                 <input type="text" placeholder="Apartment, suite, unit etc."  formControlName="address" [formControl]="orderForm.controls.address" required/>
+                                <div *ngIf="orderForm.controls.address.invalid && orderForm.controls.address.touched" class="text-danger t-error">
+                                    Address is required.
+                                  </div>
                             </div>
                             <div class="form-group col-md-6 m-b20">
                                 <select placeholder="City">
@@ -62,10 +68,16 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6 m-b20">
-                                <input type="email" placeholder="Email" formControlName="email" [formControl]="orderForm.controls.email" required/>
+                                <input type="email" placeholder="Email" formControlName="email" [formControl]="orderForm.controls.email"/>
+                                <div *ngIf="orderForm.controls.email.invalid && orderForm.controls.email.touched" class="text-danger  t-error">
+                                    Email is required.
+                                  </div>
                             </div>
                             <div class="form-group col-md-6 m-b20">
-                                <input type="tel" placeholder="Phone" formControlName="phoneNo" [formControl]="orderForm.controls.phoneNo" required/>
+                                <input type="tel" placeholder="Phone" formControlName="phoneNo" [formControl]="orderForm.controls.phoneNo"/>
+                                <div *ngIf="orderForm.controls.phoneNo.invalid && orderForm.controls.phoneNo.touched" class="text-danger t-error">
+                                    Phone Number is required.
+                                  </div>
                             </div>
                         </div>
                         <div>
@@ -99,14 +111,14 @@
                             <p class="content-2">If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing & Shipping section.</p>
                             <div class="hidden-form">
                                 <div class="form-group m-b20">
-                                    <input type="text" placeholder="Address" />
+                                    <input type="text" placeholder="Address"/>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col-md-6 m-b20">
                                         <input type="text" placeholder="Apartment, suite, unit etc."/>
                                     </div>
                                     <div class="form-group col-md-6 m-b20">
-                                        <input type="text" placeholder="Town/ City" />
+                                        <input type="text" placeholder="Town/ City"/>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -114,7 +126,7 @@
                                         <input type="text" placeholder="Province"/>
                                     </div>
                                     <div class="form-group col-md-6 m-b20">
-                                        <input type="text" placeholder="Postcode/ Zip" />
+                                        <input type="text" placeholder="Postcode/ Zip"/>
                                     </div>
 
                                 </div>
@@ -147,7 +159,7 @@
                             <tr *ngFor="let item of cartItems">
                                 <td ><img [src]="item.image" class="img-tb"/></td>
                                 <td>{{item.title}}</td>
-                                <td>${{ (item.price * item.qty) | number:'1.2-2' }}</td>
+                                <td>${{ (item.price * item.qty) | number:'1.2-2'}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -189,7 +201,7 @@
                     </div>
 
                       <div class="form-group">
-                        <button class="order-btn" type="submit">Place Order Now</button>
+                        <button class="order-btn" type="submit" [disabled]="orderForm.invalid">Place Order Now</button>
                       </div>
                     </div>
             </div>

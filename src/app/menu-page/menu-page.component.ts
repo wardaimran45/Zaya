@@ -43,8 +43,5 @@ export class MenuPageComponent implements OnInit{
     // Set the selected product ID in the service
     this.productDetailService.setSelectedProductId(selectedProduct);
     this.router.navigate(['product-detail', id]);
-  }
-
- 
-  
+  }  
 }

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators} from '@angular/forms';
 import {AngularFireAuth} from '@angular/fire/compat/auth';
 import { EmailTaken } from '../validators/email-taken';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -11,7 +12,7 @@ import { EmailTaken } from '../validators/email-taken';
 export class RegisterComponent {
 
   constructor(private auth: AngularFireAuth,
-    private emailTaken: EmailTaken
+    private emailTaken: EmailTaken, private router: Router
     ){
 
   }
@@ -63,7 +64,10 @@ export class RegisterComponent {
     }
     this.alertMsg = 'Success! Your account has been created'
     this.alertColor = 'green'
+    
     this.registerForm.reset();
+    setTimeout(() => {
+      this.router.navigate(['login']);
+    }, 2000);
   }
-  
 }

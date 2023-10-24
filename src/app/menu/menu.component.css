@@ -3,7 +3,7 @@
 }
 .menu-section{
     /* padding-top: 100px; */
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     position: relative;
     z-index: 1;
     width: 100%;
@@ -148,4 +148,11 @@
 }
 .row{
     width: 100%;
+}
+.btn-on{
+    background-color: #ffeff0 !important;
+    color: #ee2737 !important;
+}
+.btn-on a{
+    color: #ee2737 !important;
 }

@@ -299,3 +299,13 @@
     color: #EE2737;
     border-radius: 6px;
 }
+.add-btn{
+    padding: 2px 8px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    background-color: #EE2737;
+    border: none;
+    margin-left: 10px;
+    margin-right: 5px;
+}

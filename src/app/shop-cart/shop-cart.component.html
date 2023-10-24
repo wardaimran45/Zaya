@@ -43,7 +43,7 @@
                                 <li>By <span class="text-primary font-weight-500">Burger Farm</span></li>
                                 <li class="list-icon"><img class="scooter-icon" src="../../assets/icons/food-delivery.png"/> 30 min</li>
                             </ul>
-                            <p class="mb-0"><span class="text-primary font-weight-500">${{product.price}}.00</span> For a one</p>
+                            <p class="mb-0"><span class="text-primary font-weight-500">${{product.price}}.00</span> For a one  <button class="add-btn" (click)="addToCart(product)">+</button>  <app-quantity-selector [qty]="product.qty" (quantityChange)="onQuantityChange($event, product)"></app-quantity-selector></p>
                         </div>
                     </div>
                 </div>
@@ -59,11 +59,12 @@
                             <div class="dz-content-1">
                                 <div class="dz-head-1">
                                     <h6 class="title-2">{{items.title}}</h6>
-                                    <a class="close-btn-2">x</a>
+                                    <a class="close-btn-2" (click)="onCloseButtonClick(items)">x</a>
                                 </div>
                                 <div class="dz-body-1">
-                                    <div class="q-selector"><app-quantity-selector></app-quantity-selector></div>
-                                    <h5 class="price">${{items.price}}</h5>
+                                    <div class="q-selector"><app-quantity-selector [qty]="items.qty" (quantityChange)="onQuantityChange($event, items)"></app-quantity-selector></div>
+                                    <h5 class="price">${{items.qty*items.price}}</h5>
+                                   
                                 </div>
                             </div>
                         </div>

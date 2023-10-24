@@ -91,7 +91,7 @@ export class ProductDetailComponent implements OnInit {
         }];
         this.cartService.addToCart(selectedProduct);
         // this.router.navigate(['checkout']);
-    this.selectedProduct.qty = 1;
+    // this.selectedProduct.qty = 1;
     console.log("product detail page",selectedProduct)
   }
   updateTotalPrice(newQuantity: number) {

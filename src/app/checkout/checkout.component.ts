@@ -47,7 +47,6 @@ export class CheckoutComponent implements OnInit{
   })
  ngOnInit(): void {
   const formDataJSON = localStorage.getItem('orderFormData');
-  console.log("ccc",formDataJSON);
   if (formDataJSON) {
     // If the data exists in local storage, parse it back to a JavaScript object
     const formData = JSON.parse(formDataJSON);
@@ -56,7 +55,6 @@ export class CheckoutComponent implements OnInit{
     // Set the form values with the retrieved data using patchValue
     this.orderForm.patchValue(formData);
   }
-
 }
 
 getTotalAmount() {
@@ -77,17 +75,16 @@ placeOrder() {
     // Save the order and then remove the stored form data from local storage
     this.orderService.saveOrder(orderDetails);
     localStorage.removeItem('orderFormData');
-    
-    alert("Order Placed");
+
+    //clearing cart items
+    this.cartService.clearCart();
     this.router.navigate(['/order-placed']);
   } else {
     this.router.navigate(['/login']);
   }
-
   console.log("checking", formData);
   console.log("checking cart", cartItems);
+
 }
-
-
 }
 

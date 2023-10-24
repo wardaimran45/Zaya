@@ -16,13 +16,49 @@ export class ShopCartComponent implements OnInit{
   starIcon = faStar;
   cartItems: Product[] = [];
   arrowIcon = faArrowRight;
+  selectedProduct: any
 
   constructor(private orderService: OrderService, private cartService: CartService , private router: Router){}
   ngOnInit(): void {
     this.products$ = this.orderService.getrelatedProducts();
     this.cartItems = this.cartService.getCart();
+    console.log("cart Items cart page", this.cartItems);
   }
+  onQuantityChange(event: any, product: Product) {
+    const newQuantity = event;
+    
+    // Update the quantity of the product in the cartItems array
+    this.cartItems = this.cartItems.map((item) => {
+      if (item.id === product.id) {
+        item.qty = newQuantity;
+      }
+      return item;
+    })
+
+    this.products$.subscribe((products) => {
+      products = products.map((p) => {
+        if (p.id === product.id) {
+          p.qty = newQuantity;
+        }
+        return p;
+      });
+      // Now you can update the products$ observable with the modified array.
+      this.products$ = new Observable((subscriber) => {
+        subscriber.next(products);
+      });
+    });
+  }
+ 
+  
  orderNow(){
    this.router.navigate(['checkout'])
  }
+ onCloseButtonClick(product: Product) {
+  this.cartService.removeFromCart(product);
+}
+addToCart(selectedProduct: any) {
+
+      this.cartService.addToCart(selectedProduct);
+  console.log("shop cart page",selectedProduct)
+}
 }

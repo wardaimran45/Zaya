@@ -40,7 +40,8 @@ const routes: Routes = [
   },
   {
     path: 'order-placed',
-    component: OrderComponent
+    component: OrderComponent,
+    canActivate: [AuthGuard], 
   },
   {
     path: 'shop-cart',
