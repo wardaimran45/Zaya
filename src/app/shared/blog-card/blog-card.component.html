@@ -1,0 +1,30 @@
+<div class="dz-card style-1">
+    <div class="dz-media">
+        <a>
+            <img [src]="image" alt="">
+        </a>
+    </div>
+    <div class="dz-info">
+        <div class="dz-meta">
+            <ul>
+                <li>
+                    <a>
+                        <fa-icon [icon]="dateIcon"  class="icon-1"></fa-icon>
+                        {{date}}
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <fa-icon [icon]="commentIcon" class="icon-2"></fa-icon>
+                        {{comment}}K
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h5 class="dz-title">{{title}}</h5>
+        <p>{{desc}}</p>
+        <div class="read-btn">
+            <a class="btn-hover-2">Read More</a>
+        </div>
+    </div>
+</div>

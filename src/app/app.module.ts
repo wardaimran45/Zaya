@@ -32,6 +32,8 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { ShopCartComponent } from './shop-cart/shop-cart.component';
 import { ScrollService } from './services/scroll.service';
 import { RouterModule, Routes, Scroll } from '@angular/router';
+import { BlogComponent } from './blog/blog.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 
 
@@ -57,7 +59,9 @@ import { RouterModule, Routes, Scroll } from '@angular/router';
         CheckoutComponent,
         OrderComponent,
         DropdownComponent,
-        ShopCartComponent
+        ShopCartComponent,
+        BlogComponent,
+        BlogDetailComponent
     ],
     providers: [ScrollService],
     bootstrap: [AppComponent],

@@ -10,6 +10,8 @@ import {AngularFireAuthGuard, redirectUnauthorizedTo  } from '@angular/fire/comp
 import { AuthGuard } from './guards/auth.guard';
 import { OrderComponent } from './order/order.component';
 import { ShopCartComponent } from './shop-cart/shop-cart.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 
 const redirectUnauthorizedToHome = () => redirectUnauthorizedTo('/')
 
@@ -46,6 +48,14 @@ const routes: Routes = [
   {
     path: 'shop-cart',
     component: ShopCartComponent
+  },
+  {
+    path: 'blog',
+    component: BlogComponent
+  },
+  {
+    path: 'blog-detail/:id',
+    component: BlogDetailComponent
   }
   
 

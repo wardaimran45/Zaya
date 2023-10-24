@@ -39,11 +39,31 @@ export class CheckoutComponent implements OnInit{
     Validators.required,
     Validators.maxLength(30)
    ])
+   lName= new FormControl('', [
+    Validators.required,
+    Validators.minLength(3)
+   ])
+   cName= new FormControl('', [
+    Validators.required,
+    Validators.maxLength(30)
+   ])
+   province= new FormControl('', [
+    Validators.required,
+    Validators.maxLength(30)
+   ])
+   zipCode= new FormControl('', [
+    Validators.required,
+    Validators.maxLength(30)
+   ])
   orderForm = new FormGroup({
     fName: this.fName,
     email: this.email,
     phoneNo: this.phoneNo,
-    address: this.address
+    address: this.address,
+    lName: this.lName,
+    cName: this.cName,
+    province: this.province,
+    zipCode: this.zipCode
   })
  ngOnInit(): void {
   const formDataJSON = localStorage.getItem('orderFormData');

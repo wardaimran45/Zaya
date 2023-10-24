@@ -6,6 +6,7 @@ import { MenuCardComponent } from './menu-card/menu-card.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AlertComponent } from './alert/alert.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BlogCardComponent } from './blog-card/blog-card.component';
 
 
 
@@ -15,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardComponent,
     MenuCardComponent,
     AlertComponent,
+    BlogCardComponent,
    
     
   ],
@@ -28,6 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardComponent,
     MenuCardComponent,
     AlertComponent,
+    BlogCardComponent
  
   ]
 })
