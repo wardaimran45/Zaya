@@ -95,6 +95,7 @@
   }
   .navbar{
     background-color: transparent;
+    z-index: 3;
   }
   .nav-link{
     color: white;

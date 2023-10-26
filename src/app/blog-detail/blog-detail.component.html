@@ -1,1 +1,81 @@
-<p>blog-detail works!</p>
+<app-nav></app-nav>
+<section class="blog-detail">
+    <div class="breadcrumb-wrapper">
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';" class="bread-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="/blog">Blog</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Blog Detail</li>
+            </ol>
+          </nav>
+    </div>
+    <!-- Banner Detail -->
+     <div class="content-inner">
+          <div class="min-container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="blog-single">
+                        <div class="dz-media rounded-md">
+                            <img [src]="selectedBlog.image" class="detail-img">
+                        </div>
+                        <div class="dz-info">
+                            <h1 class="title">{{selectedBlog.title}}</h1>
+                            <div class="dz-meta">
+                                <ul>
+                                    <li><a href="#"><fa-icon class="f-icon" [icon]="userIcon"></fa-icon>By <span class="author">{{selectedBlog.author}}</span></a></li>
+                                    <li><a href="#"><fa-icon class="f-icon" [icon]="calenderIcon"></fa-icon>{{selectedBlog.date}}</a></li>
+                                    <li><a href="#"><fa-icon class="f-icon" [icon]="commentIcon"></fa-icon>{{selectedBlog.comment}}K</a></li>
+                                </ul> </div>
+                            <div class="dz-post-text">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <blockquote class="wp-block-quote">
+                                    <p class="text-center">{{selectedBlog.tagline}}</p>
+                                    <cite>{{selectedBlog.author}}</cite>
+                                </blockquote>
+                                <p *ngFor="let paragraph of selectedBlog.content">{{paragraph}}</p>
+                                <ul></ul>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="dz-share-post">
+                            <div class="post-tags">
+                                <h6 class="tag">Tags:</h6>
+                            <a>Pizza Veronese</a>
+                            <a>Chicken</a>
+                            <a>Pizza</a>
+                            <a>Burger</a>
+                            <a>Sandwitch</a>                            </div>
+                            <div class="dz-social-icon">
+                                <ul>
+                                    <li><a href="#" class="btn-social">
+                                        <fa-icon [icon]="fIcon"></fa-icon>
+                                    </a></li>
+                                    <li><a href="#" class="btn-social"> <fa-icon class="social-icon" [icon]="twitterIcon"></fa-icon></a></li>
+                                    <li><a href="#" class="btn-social"> <fa-icon class="social-icon" [icon]="instaIcon"></fa-icon></a></li>
+                                    <li><a href="#" class="btn-social"> <fa-icon class="social-icon" [icon]="linkedIcon"></fa-icon></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear">
+                        <div class="comments-area">
+                            <h3 class="comment-reply">Comments</h3>
+                                <ul class="comment-list">
+                                  <li class="comment" *ngFor="let review of comments$ | async">
+                                     <div class="comment-body">
+                                      <div class="comment-author">
+                                        <img [src]="review.image" class="review-img"/>
+                                        <cite>{{review.name}}</cite></div>
+                                      <p>{{review.comments}}</p>
+                                     </div>
+                                  </li>
+                                </ul>
+                            <app-comment></app-comment>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+     </div>
+</section>
+<app-menu-footer></app-menu-footer>

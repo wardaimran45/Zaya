@@ -1,0 +1,127 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+  }
+.comment-reply:before {
+    left: 0;
+    width: 6px;
+    background: #ffc822;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 6px;
+        border-radius: 3px;
+}
+.comment-reply{
+    margin-bottom: 25px;
+    position: relative;
+    font-size: 1.25rem;
+    padding-bottom: 12px;
+    color: #222222;
+    font-weight: 600;
+}
+.comment-reply:after {
+    left: 12px;
+    width: 53px;
+    height: 4px;
+    background: #EE2737; 
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    border-radius: 3px
+}
+.s-icon{
+    margin-right: 8px;
+    color: #cccccc;
+}
+.s-icon:hover{
+    margin-right: 8px;
+    color: #ffc822;
+}
+.active{
+    margin-right: 8px;
+    color: #ffc822 !important;
+}
+.comment-form-rating{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.comment-form-comment {
+    display: block;
+    width: 100% !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.comment-form-comment textarea {
+    height: 120px !important;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #f3f4f6;
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid;
+    border-color: #f3f4f6;
+}
+.comment-form p {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+}
+.comment-form-author input, .comment-form-email input{
+    border: 2px solid;
+    border-color: #f3f4f6;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    background: #f3f4f6;
+    width: 100%;
+    border-radius: 6px;
+}
+.comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.btn-hover-2{
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#EE2737;
+    color: white;
+}
+.comment-form p textarea:active {
+    background: #fff;
+    border-color: #EE2737;
+}
+.comment-form-author input:active, .comment-form-email input:active{
+    background: #fff;
+    border-color: #EE2737;
+}
+.star-list{
+    display: flex;
+}
+.label-rating{
+    margin-right: 10px;
+
+}

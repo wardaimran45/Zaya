@@ -195,7 +195,6 @@
                         <img [src]="review.email" class="review-img"/>
                         <cite>{{review.name}}</cite></div>
                       <div class="star-rating">
-                      
                           <fa-icon *ngFor="let i of [1, 2, 3, 4, 5]" [icon]="getStarIcon(i, review.star)" [ngClass]="{'solid': i <= review.star, 'regular': i > review.star}"></fa-icon>
                       </div>
                       <p>{{review.content}}</p>

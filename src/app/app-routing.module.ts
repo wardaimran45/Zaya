@@ -12,6 +12,7 @@ import { OrderComponent } from './order/order.component';
 import { ShopCartComponent } from './shop-cart/shop-cart.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const redirectUnauthorizedToHome = () => redirectUnauthorizedTo('/')
 
@@ -56,9 +57,11 @@ const routes: Routes = [
   {
     path: 'blog-detail/:id',
     component: BlogDetailComponent
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent
   }
-  
-
 ];
 
 @NgModule({

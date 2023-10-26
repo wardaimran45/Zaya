@@ -1,0 +1,18 @@
+<div class="comment-respond">
+    <h3 class="comment-reply">Good Comments</h3>
+    <form class="comment-form" (ngSubmit)="submitComment()" [formGroup] = 'comments'>
+      <p class="comment-form-author">
+        <input placeholder="Author" [formControl]="comments.controls.name" [(ngModel)]="comment.name"/>
+      </p>
+      <p class="comment-form-email">
+        <input placeholder="Email" [(ngModel)]="comment.email"/>
+      </p>
+      <p class="comment-form-comment">
+        <textarea rows="10" [formControl]="comments.controls.content" placeholder="Type Comment Here" id="comment" [(ngModel)]="comment.content"></textarea>
+      </p>
+      <p class="form-submit">
+        <button type="submit" class="btn-hover-2" id="submit">Submit Now</button>
+      </p>
+    </form>
+</div>
+

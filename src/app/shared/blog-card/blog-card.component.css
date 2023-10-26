@@ -2,6 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .dz-card.style-1 {
+    cursor: pointer;
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
@@ -45,10 +46,15 @@
     word-break: break-word;
     font-weight: 600;
     color: #222222;
+    font-size: 20px;
+}
+.dz-title:hover{
+    color: #EE2737;
 }
 .dz-info p {
     font-size: 14px;
     line-height: 22px;
+    color: #666666;
 }
 .read-btn {
     margin-top: auto;
@@ -82,28 +88,29 @@
     margin-right: 12px;
     font-weight: 500;
 }
-dz-meta ul li a {
+.dz-meta ul li a {
     color: #666666;
+    margin-right: 10px;
 }
-.dz-meta ul li i {
+/* .dz-meta ul li i {
     font-size: 16px;
     transform: translateY(-2px) scale(1.15);
-}
+} */
 .dz-meta ul li {
     margin-right: 5px;
     color: #EE2737;
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
     position: relative;
     top: 0px;
     
 }
 .icon-1{
-    font-size: 18.5px;
+    font-size: 16px;
     margin-right: 5px;
     color: #EE2737;
 }
 .icon-2{
-    font-size: 18.5px;
+    font-size: 16px;
     margin-right: 5px;
     color: #EE2737;
 }
