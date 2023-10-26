@@ -1,11 +1,10 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
 .checkout-section{
    width: 100%;
    margin-bottom: 100px;
 }
-
 .productDetail-section{
     width: 100%;
 }
@@ -16,7 +15,6 @@
 .banner-head{
     margin-top: 150px;
 }
-
 .overlay-detail {
     position: relative;
     width: 100%;
@@ -25,7 +23,6 @@
     z-index: 1;
     margin-bottom: 50px;
 }
-
 .inner-banner {
     position: absolute;
     top: 0;
@@ -35,7 +32,6 @@
     background-color: rgba(0, 0, 0, 0.8); /* Adjust the alpha (0.5) for the desired opacity */
     z-index: 2;
 }
-
 .overlay-detail::before {
     content: "";
     background-image: url('../../assets/images/bnr13.jpg');
@@ -48,7 +44,6 @@
     height: 100%;
     z-index: 1;
 }
-
 .banner-head h1{
     color: #fff;
     font-weight: 400;
@@ -120,9 +115,7 @@
     -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
-
 .icon-content p {
-    /* color: #666666; */
     font-size: 16px;
     text-align: center;
 }
