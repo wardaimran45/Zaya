@@ -1,6 +1,4 @@
 .inner-div{
-  /* display: grid;
-  place-items: center;    */
   margin-top: 100px;
   border-radius: 5px;
   padding: 40px 15px 20px 15px;
@@ -18,9 +16,7 @@
     padding: 10px 120px;
     border: none;
     border-radius: 8px;
-    width: 100%;
-    
-    
+    width: 100%;  
 }
 .login-tag{
     font-weight: 500;

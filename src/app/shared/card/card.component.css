@@ -38,7 +38,6 @@
     left: 50%;
     transform: translateX(-50%);
     background: #F5F5F5; 
-     /* background-color: #EE2737;  */
     width: 335px;
     height: 335px;
     border-radius: 50%;
@@ -99,12 +98,9 @@
     font-size: 24px;
     font-weight: 600;
 }
-
 .dz-img-box:hover{
     background: #f6f6f6;
- 
 }
-
 .dz-img-box.style-2:hover::after, .dz-img-box.style-2:hover::before{
     position: absolute;
     content: "";
@@ -112,7 +108,6 @@
     top: -190px;
     left: 50%;
     transform: translateX(-50%);
-    /* background: #F5F5F5;  */
      background-color: #EE2737; 
     width: 335px;
     height: 335px;
@@ -134,7 +129,7 @@
     right: 100px; 
     z-index: 7;
     font-size: 14px; 
-  }
+}
 
   
   

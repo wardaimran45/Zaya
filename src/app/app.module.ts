@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { UserModule } from './user/user.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RegisterComponent } from './user/register/register.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -36,10 +35,6 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogDetailComponent } from './blog-detail/blog-detail.component';
 import { CommentComponent } from './comment/comment.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-
-
-
-
 
 @NgModule({
     declarations: [
@@ -85,8 +80,6 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     ],
     exports: [
         NavComponent
-    ]
-    
-        
+    ]      
 })
 export class AppModule { }

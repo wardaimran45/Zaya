@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class BlogComponent implements OnInit{
   blogs$!: Observable<any[]>;
   moreBlogs$!: Observable<any[]>;
-  limit: number = 5; // Number of blogs to load initially
+  limit: number = 5;
   totalBlogs: number = 0;
  constructor(private blogService: BlogService, private router: Router){}
   ngOnInit(): void {
@@ -21,14 +21,11 @@ export class BlogComponent implements OnInit{
 
 
 moreBlogs() {
-  console.log("hey");
   this.moreBlogs$ = this.blogService.getBlogs();
 }
 onBlogClick(blogId: { id: number}) {
   const id = blogId.id;
   const selectedBlog = { ...blogId };
-  
-  // Set the selected product ID in the service
   this.blogService.setSelectedBlogId(selectedBlog);
   this.router.navigate(['blog-detail', id]);
 } 

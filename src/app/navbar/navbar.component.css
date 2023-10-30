@@ -11,7 +11,6 @@
       transition: all 0.5s;
   }
   nav{
-      /* margin-top: 15px; */
       padding: 20px 0 10px 0;
       background: transparent;
       z-index: 2;
@@ -42,7 +41,7 @@
   }
   @keyframes swigo-logo {
       0%, 45%, 55%, 65%, 75%, 80%, 85%, 100% {
-        opacity: 1; /* Final opacity */
+        opacity: 1; 
         animation-timing-function: cubic-bezier(0.2, 0.6, 0.35, 1);
       }
       0% {
@@ -90,7 +89,7 @@
       border-radius: 5px;
   }
   .navbar.fixed {
-    background-color: black; /* White background color */
+    background-color: black; 
    
   }
   .navbar{
@@ -105,10 +104,9 @@
 }
 
 .mini-cart-dropdown {
-  position: absolute; /* Position the dropdown absolutely within the relative parent */
-  top: 100%; /* Position it below the parent element */
-  right: 0; /* Position it on the right side of the parent */
-  /* Other styling properties as needed */
+  position: absolute; 
+  top: 100%; 
+  right: 0; 
 }
 .badge {
   position: absolute;

@@ -25,22 +25,18 @@ export class MenuPageComponent implements OnInit{
     this.loadProducts();
   }
   loadProducts() {
-    // Fetch products based on the selected category
     this.products$ = this.allProductsService.getFilteredProducts(this.selectedCategory);
   }
   filterProducts(category: string) {
     this.selectedCategory = category;
     console.log('Selected Category:', this.selectedCategory);
 
-    // Load products based on the selected category
     this.loadProducts();
   }
 
   onCardClick(productId: { id: string,}) {
     const id = productId.id;
     const selectedProduct = { ...productId };
-    
-    // Set the selected product ID in the service
     this.productDetailService.setSelectedProductId(selectedProduct);
     this.router.navigate(['product-detail', id]);
   }  

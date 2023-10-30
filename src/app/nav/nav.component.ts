@@ -1,5 +1,5 @@
 import { Component, OnInit ,HostListener, ElementRef, Renderer2 , Input} from '@angular/core';
-import { faEur, faFilm } from '@fortawesome/free-solid-svg-icons';
+import { faFilm } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { CartService } from '../services/cart.service';
@@ -48,7 +48,4 @@ export class NavComponent  implements OnInit{
     return this.cartService.cartItemCount;
   }
   
-  
-  
-
 }

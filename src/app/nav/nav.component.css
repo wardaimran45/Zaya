@@ -41,7 +41,7 @@ nav{
 }
 @keyframes swigo-logo {
     0%, 45%, 55%, 65%, 75%, 80%, 85%, 100% {
-      opacity: 1; /* Final opacity */
+      opacity: 1; 
       animation-timing-function: cubic-bezier(0.2, 0.6, 0.35, 1);
     }
     0% {
@@ -120,4 +120,31 @@ nav{
 }
 .nav-item-card{
   position: relative;
+}
+/* Responsiveness */
+@media screen and (max-width: 992px) {
+  nav{
+    padding: 5px 5px;
+    background: transparent;
+    z-index: 2;
+    font-family: 'Poppins', sans-serif;
+ }
+ .nav-icons{
+  padding-right: 10px;
+   }
+ .anim-logo:after{
+    content: "";
+    animation-duration: 1.8s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-name: swigo-logo;
+    background-image: url(../../assets/images/pan1.png);
+    height: 12px;
+    width: 40px;
+    position: absolute;
+    top: 11px;
+    left: 170px;
+    background-repeat: no-repeat;
+   }
+
 }

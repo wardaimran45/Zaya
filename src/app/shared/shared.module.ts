@@ -16,9 +16,7 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
     CardComponent,
     MenuCardComponent,
     AlertComponent,
-    BlogCardComponent,
-   
-    
+    BlogCardComponent, 
   ],
   imports: [
     CommonModule,

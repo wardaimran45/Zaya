@@ -19,6 +19,5 @@ export class BlogService {
 
   setSelectedBlogId(blogId: any) {
     this.selectedBlogIdSource.next(blogId);
-    console.log("id", this.selectedBlogIdSource);
       }
 }

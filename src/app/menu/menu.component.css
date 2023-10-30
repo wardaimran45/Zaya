@@ -2,7 +2,6 @@
     font-family: 'Poppins', sans-serif;
 }
 .menu-section{
-    /* padding-top: 100px; */
     padding-bottom: 30px;
     position: relative;
     z-index: 1;
@@ -40,7 +39,6 @@
 .site-filters{
     margin-left: 150px;
     margin-bottom: 40px;
-    /* padding: 8px 15px; */
     border: none;
     margin-right: 10px;
 }

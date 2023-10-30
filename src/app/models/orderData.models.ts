@@ -7,7 +7,7 @@ export interface OrderData {
   }
   
   export interface Item {
-    id: number; // Add a unique identifier for the product
+    id: number; 
     title: string;
     price: number;
     qty: number;

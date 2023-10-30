@@ -26,8 +26,7 @@ export class ShopCartComponent implements OnInit{
   }
   onQuantityChange(event: any, product: Product) {
     const newQuantity = event;
-    
-    // Update the quantity of the product in the cartItems array
+
     this.cartItems = this.cartItems.map((item) => {
       if (item.id === product.id) {
         item.qty = newQuantity;
@@ -42,7 +41,6 @@ export class ShopCartComponent implements OnInit{
         }
         return p;
       });
-      // Now you can update the products$ observable with the modified array.
       this.products$ = new Observable((subscriber) => {
         subscriber.next(products);
       });

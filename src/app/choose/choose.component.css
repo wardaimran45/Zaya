@@ -58,26 +58,6 @@
     color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes flipInX{
     0% {
         -webkit-transform: perspective(400px) rotateX(90deg);

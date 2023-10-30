@@ -18,7 +18,6 @@ export class CheckoutComponent implements OnInit{
  selectedItems: any ;
  cartItems: Product[];
 
-
  constructor(private cartService: CartService, private router: Router, private authService: AuthService, private orderService: OrderService){
   this.cartItems = cartService.getCart();
   }
@@ -68,11 +67,7 @@ export class CheckoutComponent implements OnInit{
  ngOnInit(): void {
   const formDataJSON = localStorage.getItem('orderFormData');
   if (formDataJSON) {
-    // If the data exists in local storage, parse it back to a JavaScript object
     const formData = JSON.parse(formDataJSON);
-    console.log("form Data", formData);
-
-    // Set the form values with the retrieved data using patchValue
     this.orderForm.patchValue(formData);
   }
 }
@@ -92,18 +87,13 @@ placeOrder() {
   };
 
   if (this.authService.isAuthenticated()) {
-    // Save the order and then remove the stored form data from local storage
     this.orderService.saveOrder(orderDetails);
     localStorage.removeItem('orderFormData');
-
-    //clearing cart items
     this.cartService.clearCart();
     this.router.navigate(['/order-placed']);
   } else {
     this.router.navigate(['/login']);
   }
-  console.log("checking", formData);
-  console.log("checking cart", cartItems);
 
 }
 }

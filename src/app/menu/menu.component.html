@@ -34,17 +34,8 @@
         <div class="menuCard-1">
         <div class="row" >
             <div *ngFor="let product of products$ | async" class="col-xl-4 col-lg-4 col-md-4 mb-4" (click)=" onCardClick(product)"><app-menu-card [img]="product.image" [price]="product.price" [content]="product.description" [title]="product.title" [star]="product.rating"></app-menu-card></div>
-            <!-- <div class="col-xl-4 col-lg-4 col-md-4"><app-menu-card img="../../assets/images/pic2.jpg" price="$17.56" content="It is a long established fact that a reader will be distracted by the readable." title="Chicken Burger" star="4.5"></app-menu-card></div>
-            <div class="col-xl-4 col-lg-4 col-md-4"><app-menu-card img="../../assets/images/pic3.jpg" price="$24.50" content="It is a long established fact that a reader will be distracted by the readable." title="Pineapple Pizza" star="4.5"></app-menu-card></div> -->
          </div>
        </div>
-         <!-- <div class="menuCard-2">
-            <div class="row" >
-                <div class="col-xl-4 col-lg-4 col-md-4"><app-menu-card img="../../assets/images/pic4.jpg" price="$$11.02" content="It is a long established fact that a reader will be distracted by the readable." title="Pineapple Soup" star="4.5"></app-menu-card></div>
-                <div class="col-xl-4 col-lg-4 col-md-4"><app-menu-card img="../../assets/images/pic5.jpg" price="$4.56" content="It is a long established fact that a reader will be distracted by the readable." title="Momos" star="4.5"></app-menu-card></div>
-                <div class="col-xl-4 col-lg-4 col-md-4"><app-menu-card img="../../assets/images/pic6.jpg" price="$12.20" content="It is a long established fact that a reader will be distracted by the readable." title="Pancake" star="4.5"></app-menu-card></div>
-             </div>
-         </div>  -->
     </div>
     <div></div>
 </section>

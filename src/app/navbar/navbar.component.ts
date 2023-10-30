@@ -26,7 +26,6 @@ export class NavbarComponent {
   @HostListener('window:scroll', ['$event'])
   onScroll(): void {
     const scrollY = window.scrollY;
-    // Define the scroll position at which you want to toggle the fixed navbar
     const scrollThreshold = 100;
 
     if (scrollY > scrollThreshold && !this.isNavbarFixed) {
@@ -41,5 +40,4 @@ export class NavbarComponent {
   get cartItemCount() {
     return this.cartService.cartItemCount;
   }
-
 }

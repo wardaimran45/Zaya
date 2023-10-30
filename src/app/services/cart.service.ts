@@ -10,8 +10,6 @@ export class CartService {
   private cartItems: Product[] = [];
   cartItemCount: number = 0;
 
-
-
   constructor(private db: AngularFirestore) {
     const storedCartItems = localStorage.getItem('cartItems');
     if (storedCartItems) {

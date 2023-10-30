@@ -1,6 +1,4 @@
 .inner-div{
-    /* display: grid;
-    place-items: center;    */
     margin-top: 100px;
     border-radius: 5px;
     padding: 40px 15px 20px 15px;
@@ -31,9 +29,6 @@
   .text-color-form{
       color: #666666;
   }
-  /* *, ::after, ::before {
-    width: 100%;
-} */
 input:focus{
     border: 1px solid #7da640 !important;
 }

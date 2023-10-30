@@ -151,17 +151,13 @@
     z-index: -1;
     margin-top: -100px;
 }
-/* hehe */
 input[type="time"]{
     flex-direction: row-reverse;
     padding-left: 0px !important;
     padding: unset !important;
 }
 input[type="time"]::-webkit-calendar-picker-indicator {
-    /* filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg); */
     filter: invert(1) sepia(0) saturate(0) brightness(10);
-     /* margin-right: -15px !important; */
-    /* display: none; */
     margin-right: 15px;
     font-size: 24px;
  }

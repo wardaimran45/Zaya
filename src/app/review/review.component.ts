@@ -20,8 +20,6 @@ export class ReviewComponent {
     star: 0,
   };
   
-
-  
   selectedRating: number = 0; // Default to no rating
   constructor(private auth: AngularFireAuth, private reviewService: ReviewsService){}
 
