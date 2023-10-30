@@ -19,7 +19,8 @@
     -ms-transition: all 0.8s;
     transition: all 0.8s;
     color: white;
-  }
+}
+
 .img-box{
     cursor: pointer;
     border-radius: 10px;
@@ -33,18 +34,20 @@
     height: 100%;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
+
 .img-box:hover {
     transform: translateY(-8px) scale(1.05); 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
+
 .dz-media{
     position: relative;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
     transition: transform 0.2s ease-in-out;
     max-width: 100%; 
-  max-height: 100%; 
-  object-fit: cover;
+   max-height: 100%; 
+   object-fit: cover;
 }
 
 .rating{
@@ -65,31 +68,35 @@
     -ms-transition: all 0.8s;
     transition: all 0.8s;
 }
+
 .icon-2{
     color: #FE9F10;
     margin-right: 5px;
 }
+
 .card{
     width: 365px;
     border: none;
     padding-bottom: 10px;
 }
+
 .card-head{
     padding-top: 15px;
     font-size: 20px;
     font-weight: 600;
     margin: 0px 0px 8px;
 }
+
 .card-content{
     color: #868686;
     font-size: 14px;
     margin-bottom: 10px;
 }
+
 .card-price{
     color: #EE2737;
     font-weight: 600;
     font-size: 24px;
     line-height: 1.1;
     margin-bottom: 30px;
-
 }

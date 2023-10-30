@@ -1,18 +1,20 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 *, ::after, ::before {
     width: 100%;
 }
+
 input:focus{
     border: 1px solid #7da640 !important;
 }
+
 .i-tag{
     border:1px solid rgba(102, 102, 102, 0.75) !important;
 }
-*{
-    font-family: 'Poppins', sans-serif;
-  }
 
 .text-red-400{
     color: red;
     font-size: 14px;
-   
 }

@@ -1,6 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
 .dz-card.style-1 {
     cursor: pointer;
     position: relative;
@@ -12,6 +13,7 @@
     margin-bottom: 30px;
     display: flex;
 }
+
 .dz-media {
     min-width: 240px;
     width: 240px;
@@ -19,6 +21,7 @@
     height: auto;
     position: relative;
 }
+
 .dz-media::before {
     position: absolute;
     top: 0;
@@ -31,6 +34,7 @@
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
     transition: all 0.5s;
 }
+
 .dz-info {
     padding: 25px 30px;
     display: flex;
@@ -38,9 +42,11 @@
     position: relative;
     flex: 1;
 }
+
 .dz-meta {
     margin-bottom: 10px;
 }
+
 .dz-title {
     margin-bottom: 8px;
     word-break: break-word;
@@ -48,17 +54,21 @@
     color: #222222;
     font-size: 20px;
 }
+
 .dz-title:hover{
     color: #EE2737;
 }
+
 .dz-info p {
     font-size: 14px;
     line-height: 22px;
     color: #666666;
 }
+
 .read-btn {
     margin-top: auto;
 }
+
 .btn-hover-2 {
     color: white;
     background-color:#EE2737;
@@ -76,10 +86,12 @@
     align-items: center;
     justify-content: center;
 }
+
 .dz-meta ul {
     margin: 0;
     padding: 0;
 }
+
 .dz-meta ul li {
     display: inline-block;
     position: relative;
@@ -88,6 +100,7 @@
     margin-right: 12px;
     font-weight: 500;
 }
+
 .dz-meta ul li a {
     color: #666666;
     margin-right: 10px;
@@ -97,14 +110,15 @@
     margin-right: 5px;
     color: #EE2737;
     position: relative;
-    top: 0px;
-    
+    top: 0px;  
 }
+
 .icon-1{
     font-size: 16px;
     margin-right: 5px;
     color: #EE2737;
 }
+
 .icon-2{
     font-size: 16px;
     margin-right: 5px;

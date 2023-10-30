@@ -1,9 +1,11 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
+
 .menuPage-section{
     width: 100%;
 }
+
 .banner-head{
     margin-top: 150px;
 }
@@ -40,7 +42,6 @@
     z-index: 1;
 }
 
-
 .banner-head h1{
     color: #fff;
     font-weight: 400;
@@ -49,11 +50,13 @@
     margin-bottom: 20px;
     font-family: 'Lobster';
 }
+
 .bread{
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
 .breadcrumb{
     background-color:#EE2737 ;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
@@ -64,9 +67,11 @@
     align-items: center;
     padding: 13px 30px;
 }
+
 .breadcrumb-item{
     color: white;
 }
+
 .breadcrumb-item+.breadcrumb-item::before{
     color: white;
 }
@@ -83,8 +88,8 @@
     margin-right: -10px;
     list-style: none;
     display: flex;
-
 }
+
 .list-btn{
     background-color: white;
     color: #ee2737;
@@ -92,24 +97,28 @@
     border: none;
     margin-right: 10px;
 }
+
 .list-btn:hover, .list-btn:active{
     background-color: #ffeff0;
     padding: 5px 20px;
     border: none;
     margin-right: 10px;
 }
+
 .list-btn a{
     color: black;
     font-size: 15px;
     display: inline-flex;
     font-weight: 500;
 }
+
 .list-btn a:hover{
     color: #ee2737;
     font-size: 15px;
     display: inline-flex;
     font-weight: 500;
 }
+
 .view-btn{
     color: white;
     background-color:  #ee2737;
@@ -117,8 +126,8 @@
     border-radius: 6px;
     font-size: 14px;
     font-weight: 500;
-
 }
+
 .filter-icon{
     color: white;
     font-size: 16px;
@@ -157,30 +166,34 @@
     height: 25px;
     margin-right: 10px;
 }
+
 .drink{
     background-image: url('../../assets/icons/cocktail.png');
     width: 25px;
     height: 25px;
     margin-right: 10px;
-
 }
+
 .menuCard-1{
       margin-left: 150px;
       margin-right: 90px;
       margin-bottom: 30px;
 }
+
 .menuCard-2{
     margin-left: 150px;
     margin-right: 90px;
-
 }
+
 .p-unset{
     padding: unset !important;
     width: 150px;
 }
+
 .row{
     width: 100%;
 }
+
 .menuCard-1{
     margin-left: 150px;
     margin-right: 90px;

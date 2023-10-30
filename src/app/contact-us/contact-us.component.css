@@ -1,20 +1,25 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
 .checkout-section{
    width: 100%;
    margin-bottom: 100px;
 }
+
 .productDetail-section{
     width: 100%;
 }
+
 .product-detail{
     padding-left: 150px;
     padding-right: 190px;
 }
+
 .banner-head{
     margin-top: 150px;
 }
+
 .overlay-detail {
     position: relative;
     width: 100%;
@@ -23,6 +28,7 @@
     z-index: 1;
     margin-bottom: 50px;
 }
+
 .inner-banner {
     position: absolute;
     top: 0;
@@ -32,6 +38,7 @@
     background-color: rgba(0, 0, 0, 0.8); 
     z-index: 2;
 }
+
 .overlay-detail::before {
     content: "";
     background-image: url('../../assets/images/bnr13.jpg');
@@ -44,6 +51,7 @@
     height: 100%;
     z-index: 1;
 }
+
 .banner-head h1{
     color: #fff;
     font-weight: 400;
@@ -52,11 +60,13 @@
     margin-bottom: 20px;
     font-family: 'Lobster';
 }
+
 .bread{
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
 .breadcrumb{
     background-color:#EE2737 ;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
@@ -67,12 +77,15 @@
     align-items: center;
     padding: 13px 30px;
 }
+
 .breadcrumb-item{
     color: white;
 }
+
 .breadcrumb-item+.breadcrumb-item::before{
     color: white;
 }
+
 .section-wrapper-8 {
     position: relative;
     background-color: rgba(34, 34, 34, 0.04);
@@ -86,6 +99,7 @@
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 .icon-bx-wraper{
     position: relative;
     text-align: center;
@@ -95,6 +109,7 @@
     transition: all 0.5s;
     padding-top: 60px;
 }
+
 .icon-bx {
     width: 115px;
     height: 115px;
@@ -106,6 +121,7 @@
     transform: translateY(-50%) translateX(-50%);
     z-index: 2;
 }
+
 .icon-cell{
     border-radius: 100%;
     box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
@@ -115,10 +131,12 @@
     -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .icon-content p {
     font-size: 16px;
     text-align: center;
 }
+
 .icon-content {
     padding: 90px 40px 30px;
     box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
@@ -132,16 +150,19 @@
     height: 221px;
     z-index: 1;
 }
+
 .icon-content:hover{
     background-color: #EE2737;
     color: white !important;
 }
+
 .contact-icons{
     font-size: 50px;
     vertical-align: middle;
     line-height: 50px;
     display: inline-flex;
 }
+
 .title-3 {
     font-weight: 600;
     font-size: 20px;

@@ -1,6 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
+
 .service-section{
     margin-top: 15px;
     margin-left: 100px;
@@ -14,12 +15,14 @@
     padding-bottom: 70px;
     margin-bottom: 100px;
 }
+
 .section-head{
     margin-bottom: 50px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
 }
+
 .service-title{
     font-size: 60px;
     line-height: 1;
@@ -30,6 +33,7 @@
     animation-delay: 0.2s;
     animation-name: flipInX;
 }
+
 .icon-box-wrapper{
     position: relative;
     border-radius: 10px;
@@ -37,9 +41,11 @@
     padding: 20px 12px 30px;
     min-height: 180px;
 }
+
 .icon-box{
     margin-bottom: 20px;
 }
+
 .icon-cell{
     width: 65px;
     height: 65px;
@@ -47,10 +53,12 @@
     min-width: 65px;
     line-height: 65px;
 }
+
 .menu-icons{
     width: 60px;
     height: 60px;
 }
+
 .icon-content p{
     font-weight: 500;
     font-size: 18px;

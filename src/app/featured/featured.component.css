@@ -1,24 +1,28 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
+
 .content-inner{
     padding-top: 100px;
     padding-bottom: 80px;
- 
 }
+
 .row{
     margin: unset;
 }
+
 .menu-items{
-    margin-left: 150px;
-    margin-right: 200px;
+   margin-left: 150px;
+   margin-right: 200px;
 }
+
 .featured-content h1{
     font-size: 60px;
     line-height: 1;
     font-style: normal;
     font-family: 'Lobster';
 }
+
 .fadeInUp{
     visibility: visible;
     animation-delay: 0.4s;

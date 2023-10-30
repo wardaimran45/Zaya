@@ -1,16 +1,19 @@
 .alert-msg{
     margin-top: 15px;
-
 }
+
 .bg-green-400{
     background-color: #2f9e37;
 }
+
 .bg-blue-400{
     background-color: lightskyblue;
 }
+
 .bg-red-400{
     background-color: #ee2737;
 }
+
 *{
     font-family: 'Poppins', sans-serif;
   }

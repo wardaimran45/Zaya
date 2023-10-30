@@ -1,29 +1,36 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
+
 .blog-detail{
    width: 100%;
    margin-bottom: 50px;
 }
+
 .breadcrumb-wrapper{
     background-color: #f9f9f9;
     margin-top: 5%;
     padding: 20px 150px;
 }
+
 .bread-nav{
     font-size: 15px;
 }
+
 .breadcrumb{
     margin: unset !important;
 }
+
 .active{
     color: #EE2737;
     font-weight: 500;
 }
+
 .content-inner {
     padding-top: 100px;
     padding-bottom: 70px;
 }
+
 .blog-single{
     width: 100%;
     max-width: 100%;
@@ -33,6 +40,7 @@
     position: relative;
     background-color: #fff;
 }
+
 .dz-share-post {
     display: flex;
     align-items: center;
@@ -41,9 +49,11 @@
     border-top: 1px solid rgba(34, 34, 34, 0.1);
     border-bottom: 1px solid rgba(34, 34, 34, 0.1);
 }
+
 .rounded-md {
     border-radius: 10px !important;
 }
+
 .min-container{
     max-width: 53.125rem;
     margin-left: auto;
@@ -51,6 +61,7 @@
     padding-left: 0.938rem;
     padding-right: 0.938rem;
 }
+
 .dz-share-post {
     display: flex;
     align-items: center;
@@ -59,19 +70,23 @@
     border-top: 1px solid rgba(34, 34, 34, 0.1);
     border-bottom: 1px solid rgba(34, 34, 34, 0.1);
 }
+
 .post-tags {
     margin-left: -3px;
     margin-right: -3px;
 }
+
 .dz-social-icon {
     display: flex;
     align-items: center;
 }
+
 .dz-social-icon ul li{
     display: inline-block;
     padding-left: 15px;
     padding-right: 15px;
 }
+
 .btn-social{
     height: 30px;
     width: 30px;
@@ -82,35 +97,42 @@
     border-radius: 4px;
     color: #EE2737;
 }
+
 .detail-img{
     width: 100%;
     height: 451px;
     object-fit: cover;
     border-radius: 6px;
 }
+
 .title{
     font-size: 42px;
     font-weight: 600;
     margin: 0 0 8px;
 }
+
 .dz-info{
     position: relative;
     padding: 25px 0 0;
 }
+
 .f-icon{
     color: #EE2737;
     font-size: 16px;
     margin-right: 10px;
 }
+
 .dz-meta ul li a{
     margin-right: 15px;
     color: #666666;
     font-size: 15px;
     font-weight: 500;
 }
+
 .dz-meta ul{
     display: flex;
 }
+
 .dz-meta{
     margin-bottom: 20px;
 }
@@ -118,11 +140,13 @@
 .author{
     color: #EE2737;
 }
+
 .dz-post-text p{
     color: #666666;
     font-size: 16px;
     margin: 0 0 16px;
 }
+
 blockquote {
     padding: 1.25rem 2rem 1.25rem 1.75rem;
     font-size: 1.375rem;
@@ -138,6 +162,7 @@ blockquote {
     border-radius: 10px;
     box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
 }
+
 blockquote cite::before {
     content: "";
     margin-right: 0.625rem;
@@ -147,6 +172,7 @@ blockquote cite::before {
     display: inline-block;
     vertical-align: middle;
 }
+
 blockquote cite {
     font-style: normal;
     position: relative;
@@ -157,6 +183,7 @@ blockquote cite {
     line-height: 1.5;
     font-size: 1rem;
 }
+
 blockquote p {
     line-height: 1.5;
     color: #222222 !important;
@@ -166,6 +193,7 @@ blockquote p {
     font-weight: 400;
     font-size: 22px !important;
 }
+
 .wp-block-quote{
     padding: 1.25rem 2rem 1.25rem 1.75rem;
     font-size: 1.375rem;
@@ -182,12 +210,14 @@ blockquote p {
     box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
 
 }
+
 .tag{
     display: inline;
     margin-right: 10px;
     font-size: 14px;
     font-weight: 600;
 }
+
 .post-tags a {
     position: relative;
     padding: 3px;
@@ -200,6 +230,7 @@ blockquote p {
     -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .social-icon{
     font-size: 16px !important;
 }
@@ -211,6 +242,7 @@ blockquote p {
     width: 80px;
     border-radius: 100%;
 }
+
 .comment-author cite{
     font-size: 1rem;
     line-height: 1.2;
@@ -221,10 +253,12 @@ blockquote p {
     margin-bottom: 8px;
     display: block;
 }
+
 .comment-list{
     margin-bottom: 60px;
     padding: 0;
 }
+
 .comment-body{
     position: relative;
     padding-left: 100px;
@@ -233,11 +267,13 @@ blockquote p {
     border-bottom: 1px solid rgba(34, 34, 34, 0.1);
     padding-bottom: 25px;
 }
+
 .comment-body p{
     margin-bottom: 10px;
     font-size: 15px;
     margin-top: 10px;
 }
+
 .comment-reply:before {
     left: 0;
     width: 6px;
@@ -248,6 +284,7 @@ blockquote p {
         height: 6px;
         border-radius: 3px;
 }
+
 .comment-reply{
     margin-bottom: 25px;
     position: relative;
@@ -256,6 +293,7 @@ blockquote p {
     color: #222222;
     font-weight: 600;
 }
+
 .comment-reply:after {
     left: 12px;
     width: 53px;

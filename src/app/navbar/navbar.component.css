@@ -1,6 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
+
   .logo{
       height: 32px;
       width: 200px;
@@ -9,22 +10,26 @@
       -webkit-transition: all 0.5s;
       -ms-transition: all 0.5s;
       transition: all 0.5s;
-  }
+}
+
   nav{
       padding: 20px 0 10px 0;
       background: transparent;
       z-index: 2;
       font-family: 'Poppins', sans-serif;
-  }
+}
+
   .nav-link.active{
       color: #EE2737 !important;
       font-weight: 600;
       
-  }
+}
+
   .nav-link{
       padding-left: 20px !important;
       padding-right: 20px !important;
-  }
+}
+
   .anim-logo:after{
       content: "";
       animation-duration: 1.8s;
@@ -38,7 +43,8 @@
       top: 12px;
       left: 165px;
       background-repeat: no-repeat;
-  }
+}
+
   @keyframes swigo-logo {
       0%, 45%, 55%, 65%, 75%, 80%, 85%, 100% {
         opacity: 1; 
@@ -66,14 +72,14 @@
       transform: none;
     }
   
-    }
+}
   
   .nav-icons{
    float: left;
    padding-right: 200px;
-    }
+}
   
-  .icon-1{
+.icon-1{
           font-size: 22px;
           background-color: white;
           color: black;
@@ -81,25 +87,30 @@
           border-radius: 5px;
           margin-right: 10px;
     }
-    .icon-2{
+
+.icon-2{
       font-size: 22px;
       background-color:white;
       color: black;
       padding: 8px 15px;
       border-radius: 5px;
-  }
-  .navbar.fixed {
+}
+
+.navbar.fixed {
     background-color: black; 
    
-  }
-  .navbar{
+}
+
+.navbar{
     background-color: transparent;
     z-index: 3;
-  }
-  .nav-link{
+}
+
+.nav-link{
     color: white;
   }
-  .nav-item-card{
+
+.nav-item-card{
     position: relative;
 }
 
@@ -108,6 +119,7 @@
   top: 100%; 
   right: 0; 
 }
+
 .badge {
   position: absolute;
   top: 10px;
@@ -117,6 +129,7 @@
   border-radius: 50%; 
   padding: 5px 8px; 
 }
+
 .nav-item-card{
   position: relative;
 }

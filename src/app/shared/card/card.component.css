@@ -1,19 +1,23 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+
 .dz-img-box{
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
+
 .dz-img-box.style-2::before {
     top: -100%;
     background-color: #EE2737;
     z-index: 0;
 }
+
 .dz-img-box.style-2:hover, .dz-img-box.style-2.active {
     border-color: #EE2737;
 }
+
 .dz-img-box{
     text-align: center;
     padding: 40px 20px 30px;
@@ -30,6 +34,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .dz-img-box.style-2::after, .dz-img-box.style-2::before{
     position: absolute;
     content: "";
@@ -45,6 +50,7 @@
     -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .dz-media{
     overflow: hidden;
     position: relative;
@@ -57,24 +63,29 @@
     -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .dz-content{
     margin-top: auto;
 }
+
 .dz-content p{
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 8px;
     color: #686868;
 }
+
 .text-primary{
     color: #EE2737 !important;
 }
+
 .btn-hover-2{
     color: rgba(0, 0, 0, 0) !important;
     transition: all .3s ease !important;
     text-shadow: 0 0 0 #fff, 500px 0 0 #fff;
     overflow: hidden;
 }
+
 .cart-btn{
     background-color:#ee2737;
     border-color: #ee2737 !important;
@@ -90,17 +101,21 @@
     align-items: center;
     justify-content: center;
 }
+
 .dz-price{
     font-size: 20px;
     font-weight: 600;
 }
+
 .dz-title{
     font-size: 24px;
     font-weight: 600;
 }
+
 .dz-img-box:hover{
     background: #f6f6f6;
 }
+
 .dz-img-box.style-2:hover::after, .dz-img-box.style-2:hover::before{
     position: absolute;
     content: "";
@@ -116,9 +131,11 @@
     -ms-transition: all 0.5s;
     transition: all 0.5s;
 }
+
 .row{
     margin: unset;
 }
+
 .badge {
     background-color: gray; 
     color: white;

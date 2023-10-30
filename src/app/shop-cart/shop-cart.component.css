@@ -1,6 +1,7 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
+
 .shopCart-section{
     width: 100%;
 }
@@ -8,10 +9,12 @@
 .productDetail-section{
     width: 100%;
 }
+
 .product-detail{
     padding-left: 150px;
     padding-right: 190px;
 }
+
 .banner-head{
     margin-top: 150px;
 }
@@ -56,11 +59,13 @@
     margin-bottom: 20px;
     font-family: 'Lobster';
 }
+
 .bread{
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
 .breadcrumb{
     background-color:#EE2737 ;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
@@ -71,25 +76,31 @@
     align-items: center;
     padding: 13px 30px;
 }
+
 .breadcrumb-item{
     color: white;
 }
+
 .breadcrumb-item+.breadcrumb-item::before{
     color: white;
 }
+
 .content-wrapper{
     padding-top: 50px;
     padding-bottom: 100px;
 }
+
 .title{
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .dz-shop-card{
     position: relative;
     overflow: hidden;
 }
+
 .style-1 {
     display: flex;
     margin-bottom: 30px;
@@ -101,40 +112,47 @@
     transition: all 0.5s;
     margin-bottom: 20px;
 }
+
 .dz-media {
     position: relative;
     width: 100px;
     min-width: 100px;
     overflow: hidden;
 }
+
 .dz-media img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 .dz-content{
     width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
 }
+
 .dz-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 16px;
 }
+
 .dz-body {
     display: flex;
     justify-content: space-between;
     margin-top: auto;
 }
+
 .dz-name {
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
     color: var(--title);
 }
+
 .rate {
     background: #FE9F10;
     color: #fff;
@@ -144,10 +162,12 @@
     font-size: 13px;
     line-height: 18px;
 }
+
 .dz-body ul {
     display: flex;
     margin: 0 -10px;
 }
+
 .dz-body ul li {
     margin: 0 10px;
     color: #727272;
@@ -155,45 +175,55 @@
     font-size: 14px;
     line-height: 21px;
 }
+
 .dz-body p {
     font-size: 14px;
     line-height: 21px;
     color: #666666;
 }
+
 .text-primary{
     color: #EE2737 !important;
     font-weight: 500;
 }
+
 .dot-icon{
     display: inline !important;
     margin-right: 10px;
 }
+
 .scooter-icon{
     width: 20px;
     height: 20px;
     margin-right: 10px;
 }
+
 .list-icon{
     display: flex; 
 }
+
 .dz-shop-card:hover {
     border-color: transparent;
     box-shadow: 0px 15px 55px rgba(34, 34, 34, 0.15);
 }
+
 .side-bar{
     padding-left: 20px;
     padding-bottom: 1px;
     top: 100px;
 }
+
 .row-content{
     margin-left: 150px;
 }
+
 .widget-title{
     margin-bottom: 25px;
     position: relative;
     font-size: 1.25rem;
     padding-bottom: 12px;
 }
+
 .widget-title:before{
     left: 0;
     width: 6px;
@@ -204,6 +234,7 @@
     bottom: 0;
     height: 6px;
 }
+
 .widget-title:after{
     left: 12px;
     width: 53px;
@@ -214,26 +245,31 @@
     bottom: 0;
     border-radius: 3px;
 }
+
 .dz-media-1{
     width: 80px;
     min-width: 80px;
     height: 80px;
     border-radius: 10px;
 }
+
 .dz-media-1 img{
     width: 80px;
     min-width: 80px;
     height: 80px;
     border-radius: 10px;
 }
+
 .dz-content-2{
     margin-left: 15px;
     width: 100%;
 }
+
 .title-2{
     font-size: 16px;
     font-weight: 600;
 }
+
 .close-btn-2{
     color: #ff0003;
     font-size: 18px;
@@ -244,17 +280,20 @@
     cursor: pointer;
     font-weight: 600;
 }
+
 .dz-body-1{
     display: flex;
     margin-left: 10px;
     justify-content: space-between;
     align-items: center;
 }
+
 .price{
     font-size: 18px;
     color: #EE2737 !important;
     font-weight: 600;
 }
+
 .cart-item{
     display: flex;
     align-items: center;
@@ -263,6 +302,7 @@
     border-bottom: 1px solid rgba(34, 34, 34, 0.1);
     margin-right: 80px;
 }
+
 .dz-head-1{
     display: flex;
     margin-left: 10px;
@@ -270,18 +310,22 @@
     align-items: center;
     margin-bottom: 10px;
 }
+
 .q-selector{
     margin-right: 110px;
 }
+
 .arrow-icon{
     margin-left: 10px;
     font-size: 22px;
     color: white;
 }
+
 .arrow-icon:hover{
     font-size: 22px;
     color: #EE2737;
 }
+
 .order-btn{
     margin-top: 30px;
     background-color: #EE2737;
@@ -293,12 +337,14 @@
     line-height: 25px;
     border-radius: 6px;
 }
+
 .order-btn:hover{
     background-color: white;
     border: 1px solid #EE2737;
     color: #EE2737;
     border-radius: 6px;
 }
+
 .add-btn{
     padding: 2px 8px;
     border-radius: 6px;

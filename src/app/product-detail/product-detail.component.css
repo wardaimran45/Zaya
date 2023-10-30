@@ -1,13 +1,16 @@
 *{
     font-family: 'Poppins', sans-serif;
-  }
+}
+
 .productDetail-section{
     width: 100%;
 }
+
 .product-detail{
     padding-left: 150px;
     padding-right: 190px;
 }
+
 .banner-head{
     margin-top: 150px;
 }
@@ -52,11 +55,13 @@
     margin-bottom: 20px;
     font-family: 'Lobster';
 }
+
 .bread{
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
 .breadcrumb{
     background-color:#EE2737 ;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
@@ -67,12 +72,15 @@
     align-items: center;
     padding: 13px 30px;
 }
+
 .breadcrumb-item{
     color: white;
 }
+
 .breadcrumb-item+.breadcrumb-item::before{
     color: white;
 }
+
 /* Product detail */
 .detail-media img{
     border-radius: 10px;
@@ -81,6 +89,7 @@
     width: 100%;
     object-fit: cover;
 }
+
 .badge{
     font-size: 14px;
     font-weight: 500;
@@ -91,37 +100,45 @@
     padding: 2px;
     margin-bottom: 10px;
 }
+
 .badge img{
     width: 16px;
     height: 16px;
     margin-right: 10px;
 }
+
 .title{
     line-height: 1.3;
     font-weight: 600;
     font-size: 36px;
 }
+
 .rating span{
     color:#727880;
     font-size: 14px;
 }
+
 .star-icon{
     color: #ffc822 !important;
     margin-right: 10px;
 }
+
 .star-icon-2{
     color: #ffc822;
     margin-right: 10px;
 }
+
 .text-dark{
     color: black !important;
 }
+
 .text{
     font-size: 15px;
     margin-top: 20px;
     color: #666666;
     line-height: 1.6;
 }
+
 .d-list-price{
     margin-top: 5px;
     display: flex;
@@ -130,13 +147,16 @@
     line-height: 30px;
     color:  #EE2737;
 }
+
 .detail-list {
     display: flex;
     margin: 25px 0px;
 }
+
 .btn-qty{
     margin-top: 10px;
 }
+
 .detail-list li{
     font-weight: 500;
     font-size: 15px;
@@ -144,6 +164,7 @@
     color:#666666;
     margin-right: 15px;
 }
+
 .bootstrap-touchspin{
     width: 105px;
     min-width: 105px;
@@ -153,6 +174,7 @@
     align-items: stretch;
     height: 31px;
 }
+
 .detail-list li span{
     display: flex;
     font-size: 20px;
@@ -160,6 +182,7 @@
     line-height: 30px;
     color: #666666;
 }
+
 .input-group-addon{
     position: absolute;
     right: 7px;
@@ -167,24 +190,28 @@
     z-index: 9;
     transform: translateY(-50%);
 }
+
 .d-list-price{
     color: #ee2737 !important;
     font-size: 20px;
     padding-top: 5px;
     line-height: 30px;
     font-weight: 600;
-  }
+}
+
 .detail-media{
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 30px;
 }
+
 .add-product{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -5px 30px;
 }
+
 .dz-media{
     display: inline-flex;
     padding: 10px;
@@ -193,6 +220,7 @@
     border: 1px solid rgba(34, 34, 34, 0.1);
     align-items: center;
 }
+
 .mini-model{
     display: inline-flex;
     padding: 10px;
@@ -201,18 +229,20 @@
     border: 1px solid rgba(34, 34, 34, 0.1);
     align-items: center;
 }
+
 .dz-media{
-  
     border-radius: 6px;
     position: relative;
     overflow: hidden;
 }
+
 .dz-content{
     margin-left: 15px;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
+
 .search-content{
     display: block;
     margin-bottom: 0.125rem;
@@ -220,6 +250,7 @@
     height: 24px;
     margin-top: 0;
 }
+
 .form-check-input{
     width: 24px;
     height: 24px;
@@ -232,24 +263,29 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .title-3{
     font-size: 16px;
     font-weight: 500;
     color: #222222;
 }
+
 .add-product li {
     padding: 5px;
     width: 50%;
 }
+
 .form-check-input:checked {
     background-color:  #EE2737;
     border-color:  #EE2737;
 }
+
 .dz-media-2 img{
     width: 45px;
     min-width: 45px;
     height: 45px;
 }
+
 .cart-btn{
     background-color:  #EE2737;
     border: none;
@@ -265,6 +301,7 @@
     justify-content: center;
     margin-bottom: 100px;
 }
+
 .cart-btn:hover{
     background-color: white;
     padding: 8px 28px;
@@ -279,20 +316,24 @@
     align-items: center;
     justify-content: center;
 }
+
 .bag-icon:hover{
     font-size: 20px;
     color: #EE2737;
 }
+
 .bag-icon{
     font-size: 20px;
     color: white;
 }
+
 /* Inner Content */
 .content-inner{
     padding-bottom: 70px;
     margin-left: 150px;
     margin-right: 190px;
 }
+
 .tab-style-1{
     border-bottom: 2px solid #EAEAEA;
     margin: 0 0 30px;
@@ -303,16 +344,20 @@
     border-radius: 6px;
     color: #fff;
 }
+
 .d-inline{
     display: inline-block;
     margin-left: 10px;
 }
+
 .nav-link{
     color: #222222;
 }
+
 .m-b10{
     margin-bottom: 20px;
 }
+
 .list-check li::before {
     font-size: 20px;
     content: "\e83f";
@@ -323,37 +368,45 @@
     top: 5px;
     color: #EE2737;
 }
+
 .tab-content{
     color: #666666;
     font-size: 16px;
 }
+
 .tick{
     margin-right: 15px;
     color:  #EE2737;
     font-size: 20px;
 }
+
 .list-check li{
     padding: 6px 0px 10px 0px;
 }
+
 /* Table */
 .check-tb1{
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.125);
     vertical-align: middle;
 }
+
 .check-tb1 tbody td {
     padding: 15px;
     font-weight: 500;
 }
+
 /* Reviews */
 .solid{
     color: #ffc822 !important;
     margin-right: 2px;
 }
+
 .regular{
     color: #ffc822;
     margin-right: 2px;
 }
+
 .review-img{
     position: absolute;
     left: 0;
@@ -361,6 +414,7 @@
     width: 80px;
     border-radius: 100%;
 }
+
 .comment-author cite{
     font-size: 1rem;
     line-height: 1.2;
@@ -371,10 +425,12 @@
     margin-bottom: 8px;
     display: block;
 }
+
 .comment-list{
     margin-bottom: 60px;
     padding: 0;
 }
+
 .comment-body{
     position: relative;
     padding-left: 100px;
@@ -383,11 +439,13 @@
     border-bottom: 1px solid rgba(34, 34, 34, 0.1);
     padding-bottom: 25px;
 }
+
 .comment-body p{
     margin-bottom: 10px;
     font-size: 15px;
     margin-top: 10px;
 }
+
 /* Special Menu */
 .section-head h2{
     font-size: 60px;
@@ -395,19 +453,23 @@
     font-style: normal;
     font-family: 'Lobster';
 }
+
 .swiper-btn-lr{
     position: relative;
     margin-left: 150px;
     margin-bottom: 100px;
     margin-right: 200px;
 }
+
 .arrow{
     color: #EE2737;
     font-size: 36px;
 }
+
 .pagination {
     justify-content: center;
 }
+
 .img-btn-prev{
     top: 50%;
     left: -80px;
@@ -419,6 +481,7 @@
     font-size: 18px;
     transition: all 0.2s;
 }
+
 .img-btn-next{
     top: 50%;
     position: absolute;
